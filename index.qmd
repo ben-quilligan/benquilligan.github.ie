@@ -5,3 +5,5 @@ title: "Ben Quilligan"
 This is a Quarto website.
 
 Test
+about:
+  template: marquee
