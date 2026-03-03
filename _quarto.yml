@@ -7,7 +7,7 @@ website:
   favicon: favicon/favicon-96x96.png
   navbar:
     title: false
-    logo: /Users/benquilligan/ChatGPT Image Mar 3, 2026, 02_37_51 PM.png
+    logo: /Users/benquilligan/logo.png
     left:
       - href: index.qmd
         text: Home
