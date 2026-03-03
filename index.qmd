@@ -1,6 +1,6 @@
 ---
 title: "Ben Quilligan"
-image: /Users/benquilligan/benquilligan.github.ie/profilepic.jpg
+image: profilepic.jpg
 about:
   template: jolla
   links: # create buttons
