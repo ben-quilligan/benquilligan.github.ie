@@ -1,6 +1,6 @@
 ---
 title: "Ben Quilligan"
-image: https://media.licdn.com/dms/image/v2/D4E03AQHchcCcazyUjw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715871257169?e=2147483647&v=beta&t=Ykol3qZqxdMw1C-my1bKddn84vXpSHU6iUPbd8295OQ
+image: /Users/benquilligan/benquilligan.github.ie/profilepic.jpg
 about:
   template: jolla
   links: # create buttons
