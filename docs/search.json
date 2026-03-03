@@ -11,6 +11,13 @@
     "href": "index.html",
     "title": "Ben Quilligan",
     "section": "",
-    "text": "This is a Quarto website.\nTest"
+    "text": "This is a Quarto website."
+  },
+  {
+    "objectID": "index.html#test",
+    "href": "index.html#test",
+    "title": "Ben Quilligan",
+    "section": "Test",
+    "text": "Test\nabout: template: trestles —"
   }
 ]
