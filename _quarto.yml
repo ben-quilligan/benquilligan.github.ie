@@ -16,6 +16,7 @@ website:
 format:
   html:
     theme: styles.scss
+    mainfont: Montserrat
     toc: true
     page-layout: full
       
