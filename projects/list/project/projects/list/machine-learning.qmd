@@ -1,0 +1,153 @@
+---
+title: "Machine Learning & Advanced Python"
+description: "Stroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset — including EDA, SMOTE oversampling, and ROC curve analysis."
+date: 2024-04-25
+categories: [Python, Machine Learning, Data Analytics]
+image: ../../images/ml-cover.png
+---
+
+## Overview
+
+This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset — approximately 20:1 in favour of non-stroke cases — and producing models that could maximise recall of true stroke cases without sacrificing overall performance.
+
+::: {.callout-note}
+**Dataset:** Stroke Prediction Dataset — 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type.
+:::
+
+## Tools & Libraries
+
+| Library | Purpose |
+|---|---|
+| `pandas` / `numpy` | Data manipulation and preprocessing |
+| `scikit-learn` | Model training, evaluation, GridSearchCV |
+| `imbalanced-learn` | SMOTE oversampling |
+| `xgboost` | XGBoost classifier |
+| `seaborn` / `matplotlib` | Data visualisation |
+
+## Methodology
+
+### 1. Exploratory Data Analysis
+
+The dataset was first examined for structure, missing values, and class imbalance. BMI had 201 missing values, which were imputed using the median. A single record with gender "Other" was removed.
+
+```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: "Show EDA code"
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load and inspect the dataset
+file = '/content/strokedataset.csv'
+data = pd.read_csv(file)
+
+print("Dataset shape:", data.shape)
+print("\nMissing values:\n", data.isna().sum())
+print("\nClass distribution:\n", data['stroke'].value_counts())
+print(f"\nClass imbalance ratio: {data['stroke'].value_counts()[0] / data['stroke'].value_counts()[1]:.1f}:1")
+```
+
+The dataset was significantly imbalanced, with only 4.87% of cases being positive stroke events — a common challenge in medical datasets that requires careful handling to avoid models that simply predict "no stroke" for every patient.
+
+### 2. Preprocessing
+
+```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: "Show preprocessing code"
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from imblearn.over_sampling import SMOTE
+
+# Impute missing BMI with median
+data['bmi'] = pd.to_numeric(data['bmi'], errors='coerce')
+data['bmi'] = data['bmi'].fillna(data['bmi'].median())
+
+# Drop ID and remove 'Other' gender
+data.drop(columns=['id'], inplace=True)
+data = data[data['gender'] != 'Other']
+
+# Encode categorical variables
+le = LabelEncoder()
+for col in ['gender', 'ever_married', 'work_type', 'Residence_type', 'smoking_status']:
+    data[col] = le.fit_transform(data[col])
+
+# Split, scale, and apply SMOTE
+X = data.drop('stroke', axis=1)
+y = data['stroke']
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, stratify=y, random_state=42)
+
+scaler = StandardScaler()
+X_train_sc = scaler.fit_transform(X_train)
+X_test_sc = scaler.transform(X_test)
+
+smote = SMOTE(sampling_strategy=0.3, k_neighbors=5, random_state=42)
+X_train_sm, y_train_sm = smote.fit_resample(X_train_sc, y_train)
+```
+
+SMOTE (Synthetic Minority Over-sampling Technique) was applied with a sampling strategy of 0.3, generating synthetic stroke cases to reduce the class imbalance in the training set without duplicating existing records.
+
+### 3. Model Training
+
+Three classifiers were trained and compared:
+
+```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: "Show model training code"
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import GridSearchCV
+from xgboost import XGBClassifier
+
+# Logistic Regression
+log_reg = LogisticRegression(max_iter=1000, class_weight='balanced', random_state=42)
+log_reg.fit(X_train_sm, y_train_sm)
+
+# Random Forest with GridSearchCV
+param_grid_rf = {
+    'n_estimators': [100, 200],
+    'max_depth': [4, 6, None],
+    'min_samples_leaf': [2, 5],
+    'class_weight': ['balanced']
+}
+grid_rf = GridSearchCV(
+    RandomForestClassifier(random_state=42),
+    param_grid_rf, scoring='roc_auc', cv=5, n_jobs=-1)
+grid_rf.fit(X_train_sm, y_train_sm)
+best_rf = grid_rf.best_estimator_
+
+# XGBoost
+xgb = XGBClassifier(
+    scale_pos_weight=10, max_depth=4, learning_rate=0.05,
+    n_estimators=200, min_child_weight=3, gamma=0.2,
+    subsample=0.8, colsample_bytree=0.8,
+    eval_metric='logloss', random_state=42, verbosity=0)
+xgb.fit(X_train_sm, y_train_sm)
+```
+
+## Results
+
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|---|---|---|---|---|---|
+| Logistic Regression | 0.7423 | 0.1891 | 0.7143 | 0.2993 | 0.7912 |
+| Random Forest | 0.9141 | 0.3448 | 0.2857 | 0.3125 | 0.8203 |
+| XGBoost | 0.8200 | 0.2174 | 0.5714 | 0.3143 | 0.7834 |
+
+::: {.callout-tip}
+**Key finding:** Random Forest achieved the highest ROC-AUC (0.82), making it the strongest overall performer. For a medical screening context where missing a stroke is more costly than a false alarm, Logistic Regression's higher recall (0.71) may be preferable despite lower precision.
+:::
+
+## Key Learnings
+
+Working with this project reinforced the importance of understanding the **business context** behind model selection — in healthcare, recall often matters more than accuracy. It also highlighted the practical challenges of class imbalance and the value of techniques like SMOTE and `class_weight='balanced'` in producing fair models on skewed data.

@@ -1,0 +1,12 @@
+---
+title: "Projects"
+listing:
+  contents: list
+  type: grid
+  sort: "date desc"
+  categories: true
+  fields: [image, title, description, categories, date]
+---
+
+A selection of academic projects completed as part of my Bachelor of Business Studies 
+(Data Analytics) at Dublin City University.
