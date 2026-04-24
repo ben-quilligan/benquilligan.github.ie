@@ -13,12 +13,12 @@ Mantis is a 500ml ready-to-drink chocolate protein shake made with Irish UHT mil
 The plan was developed by a five-person founding team, with me serving as CEO and product development lead.
 
 ::: {.callout-note}
-Mantis delivers **60 grams of protein per bottle** (12g per 100ml) — the highest protein density of any RTD shake currently available on the Irish market. Competitors including Avonmore, GetPro, and MyProtein range from 6 to 9g per 100ml.
+Mantis delivers **60 grams of protein per bottle** (12g per 100ml), the highest protein density of any RTD shake currently available on the Irish market. Competitors including Avonmore, GetPro, and MyProtein range from 6 to 9g per 100ml.
 :::
 
 ## The Product
 
-Both insect species used in Mantis are fully authorised under EU Novel Food regulations — crickets from February 2022 and buffalo worms from January 2023. The product is UHT shelf-stable, requiring no refrigeration until opened, and retails at €4.00 per bottle.
+Both insect species used in Mantis are fully authorised under EU Novel Food regulations, crickets from February 2022 and buffalo worms from January 2023. The product is UHT shelf-stable, requiring no refrigeration until opened, and retails at €4.00 per bottle.
 
 The recipe was developed through **27 iterations** over the feasibility study period, with a blind taste test conducted with 26 participants. The final formulation achieved a 54% top-tier rating of 5/5.
 
@@ -33,7 +33,7 @@ The recipe was developed through **27 iterations** over the feasibility study pe
 
 ## Market Opportunity
 
-The global protein supplement market is valued at approximately €20 billion, growing at 8–10% per annum. The Irish RTD protein beverage segment has seen 14.3% CAGR (2020–2024). Mantis identified a clear first-mover opportunity — no insect protein RTD drink currently exists in the Irish market.
+The global protein supplement market is valued at approximately €20 billion, growing at 8–10% per annum. The Irish RTD protein beverage segment has seen 14.3% CAGR (2020–2024). Mantis identified a clear first-mover opportunity, no insect protein RTD drink currently exists in the Irish market.
 
 Primary research (n=157 survey responses) confirmed that 77% of respondents would be open to trying an insect-protein drink, with taste and protein content identified as the primary purchase drivers.
 
@@ -86,8 +86,8 @@ Mantis is projected to break even operationally in Year 2, reaching a net profit
 
 ## Go-to-Market Strategy
 
-Distribution in Year 1 targets **Holland & Barrett** (14 Irish stores), **Nourish Health Stores** (20 stores), and independent gyms nationwide — placing the product on over 780 shelves. From Year 3, the plan includes expansion into national grocery multiples (Tesco Ireland and Dunnes Stores).
+Distribution in Year 1 targets **Holland & Barrett** (14 Irish stores), **Nourish Health Stores** (20 stores), and independent gyms nationwide, placing the product on over 780 shelves. From Year 3, the plan includes expansion into national grocery multiples (Tesco Ireland and Dunnes Stores).
 
 ## Key Learnings
 
-This project gave me practical experience across the full cycle of new venture development — from product ideation and consumer research through to financial modelling and investor pitch preparation. Taking the role of CEO taught me how to lead a multi-functional team, align competing priorities, and translate strategic goals into operational plans.
+This project gave me practical experience across the full cycle of new venture development, from product ideation and consumer research through to financial modelling and investor pitch preparation. Taking the role of CEO taught me how to lead a multi-functional team, align competing priorities, and translate strategic goals into operational plans.

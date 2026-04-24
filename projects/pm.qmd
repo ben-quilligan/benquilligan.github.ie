@@ -24,7 +24,7 @@ Lyten's acquisition presents several interconnected strategic challenges that wi
 
 **Technology strategy** presents a tension between Lyten's core lithium-sulphur specialism and the lithium-ion production inherited from Northvolt. According to innovation strategy literature, firms must carefully balance exploration of new technologies with exploitation of existing capabilities (March, 1991).
 
-**Scope and market focus** risks overextension across EVs, drones, and data centres simultaneously — a pattern that contributed to Northvolt's own failure.
+**Scope and market focus** risks overextension across EVs, drones, and data centres simultaneously, a pattern that contributed to Northvolt's own failure.
 
 **International expansion** at pace, while simultaneously integrating complex assets, runs counter to the Uppsala model of gradual internationalisation (Johanson & Vahlne, 2009).
 
@@ -63,7 +63,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-Lyten's expansion demonstrates features of **strategic asset-seeking** — acquiring Northvolt's European facilities to access industrial infrastructure and skilled labour (Dunning, 1988). However, the pace of expansion is inconsistent with incremental internationalisation theory.
+Lyten's expansion demonstrates features of **strategic asset-seeking**, by acquiring Northvolt's European facilities to access industrial infrastructure and skilled labour (Dunning, 1988). However, the pace of expansion is inconsistent with incremental internationalisation theory.
 
 Research on premature scaling highlights that firms expanding too quickly without stable operational foundations face significant performance challenges (Reuber et al., 2021). Lyten is simultaneously integrating distressed assets, developing new battery technologies, and expanding into multiple geographic markets.
 
@@ -80,7 +80,7 @@ Lyten's emphasis on local supply chains and government alignment can be evaluate
 | Strategic constraint | Over-dependence reduces flexibility and exposes firm to policy risk |
 | Long-term vulnerability | Subsidies can be withdrawn; political priorities shift |
 
-The key trade-off is between leveraging institutional support for short-term competitive advantage and maintaining the strategic independence required to respond to market changes. Lyten should diversify its sources of support and ensure commercial logic — not political alignment — drives investment decisions.
+The key trade-off is between leveraging institutional support for short-term competitive advantage and maintaining the strategic independence required to respond to market changes. Lyten should diversify its sources of support and ensure commercial logic, not political alignment, drives investment decisions.
 
 ## Frameworks Applied
 
@@ -92,4 +92,4 @@ The key trade-off is between leveraging institutional support for short-term com
 
 ## Key Learnings
 
-This project deepened my ability to apply theoretical frameworks to real strategic situations. Analysing Lyten's position required balancing multiple competing perspectives — which mirrors the complexity of real strategic decision-making — and reinforced the value of structured frameworks in cutting through ambiguous, multi-faceted problems.
+This project deepened my ability to apply theoretical frameworks to real strategic situations. Analysing Lyten's position required balancing multiple competing perspectives, mirroring the complexity of real strategic decision-making, and reinforced the value of structured frameworks in cutting through ambiguous, multi-faceted problems.
