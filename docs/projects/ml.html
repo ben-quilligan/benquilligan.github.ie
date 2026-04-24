@@ -79,6 +79,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-47f337d9b98e89bf1c14480bad52a24a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -268,7 +270,7 @@ Note
 <section id="exploratory-data-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="exploratory-data-analysis">1. Exploratory Data Analysis</h3>
 <p>The dataset was first examined for structure, missing values, and class imbalance. BMI had 201 missing values, which were imputed using the median. A single record with gender “Other” was removed.</p>
-<div id="3af8a9b6" class="cell" data-execution_count="1">
+<div id="8895b270" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show EDA code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -290,7 +292,7 @@ Note
 </section>
 <section id="preprocessing" class="level3">
 <h3 class="anchored" data-anchor-id="preprocessing">2. Preprocessing</h3>
-<div id="2b8af6d4" class="cell" data-execution_count="2">
+<div id="f94e419b" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Show preprocessing code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
@@ -330,7 +332,7 @@ Note
 <section id="model-training" class="level3">
 <h3 class="anchored" data-anchor-id="model-training">3. Model Training</h3>
 <p>Three classifiers were trained and compared:</p>
-<div id="c91893df" class="cell" data-execution_count="3">
+<div id="a67ba426" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Show model training code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
@@ -423,6 +425,21 @@ Tip
 <section id="key-learnings" class="level2">
 <h2 class="anchored" data-anchor-id="key-learnings">Key Learnings</h2>
 <p>Working with this project reinforced the importance of understanding the <strong>business context</strong> behind model selection. In healthcare, recall often matters more than accuracy. It also highlighted the practical challenges of class imbalance and the value of techniques like SMOTE and <code>class_weight='balanced'</code> in producing fair models on skewed data.</p>
+<hr>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> Full Project Report
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>View or download the complete project report including all code, visualisations, and analysis.</p>
+<p><a href="BAA1027.pdf" class="btn btn-primary" target="_blank"><i class="fa-solid fa-download" aria-label="download"></i> Download Full Report</a></p>
+</div>
+</div>
 
 
 </section>
