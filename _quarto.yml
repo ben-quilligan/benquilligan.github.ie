@@ -4,20 +4,39 @@ project:
 
 website:
   title: "Ben Quilligan"
-  favicon: favicon/favicon-96x96.png
+  favicon: profilepic.jpg
   navbar:
     title: false
-    logo: logo.png
+    logo: profilepic.jpg
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About Me
+      - href: projects/index.qmd
+        text: Projects
+      - href: certifications.qmd
+        text: Certifications
+      - href: reflection.qmd
+        text: Reflection
+      - href: contact.qmd
+        text: Contact
+    right:
+      - text: CV
+        href: cv/BenQuilligan_CV.pdf
+        target: _blank
+      - icon: github
+        href: https://github.com/ben-quilligan
+        target: _blank
+  page-footer:
+    left: "© 2026 Ben Quilligan"
+    right: "Built with [Quarto](https://quarto.org)"
 
 format:
   html:
-    theme: styles.scss
+    theme: [flatly, styles.scss]
     mainfont: Montserrat
-    toc: true
+    toc: false
     page-layout: full
       
       
