@@ -4,5 +4,11 @@
   },
   "about.qmd": {
     "about.html": "eaa20eff"
+  },
+  "projects/list/project/projects/list/machine-learning.qmd": {
+    "machine-learning.html": "03e3d409"
+  },
+  "projects/list/project/index.qmd": {
+    "index.html": "ef78005a"
   }
 }
