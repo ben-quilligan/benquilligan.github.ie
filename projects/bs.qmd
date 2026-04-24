@@ -1,0 +1,95 @@
+---
+title: "Business Strategy — Lyten Case Study"
+description: "A strategic analysis of Lyten's acquisition of Northvolt assets, examining post-acquisition integration, internationalisation strategy, and geopolitical alignment using core strategy frameworks."
+date: 2026-04-09
+categories: [Strategy, Business, Academic]
+image: ../../images/strategy-cover.png
+---
+
+## Overview
+
+This project is a case study analysis of **Lyten**, a US-based lithium-sulphur battery startup that acquired key assets from the bankrupt Swedish manufacturer **Northvolt**. The analysis was completed as part of the BAA1019 Business Strategy module at DCU.
+
+The case study was structured around three questions examining strategic issues, internationalisation theory, and geopolitical alignment.
+
+## Q1 — Strategic Issues Facing Lyten
+
+Lyten's acquisition presents several interconnected strategic challenges that will shape its long-term trajectory.
+
+::: {.callout-note}
+**Strategic issues in context:** Critical decisions and challenges that influence a firm's long-term direction, competitive advantage, and ability to create value (Johnson et al., 2017).
+:::
+
+**Post-acquisition integration** is the most immediate challenge. Research suggests that many mergers fail due to cultural clashes, poor coordination, and difficulties in aligning processes (Zollo & Singh, 2004). The urgency of the Northvolt sale may have limited Lyten's ability to conduct thorough due diligence.
+
+**Technology strategy** presents a tension between Lyten's core lithium-sulphur specialism and the lithium-ion production inherited from Northvolt. According to innovation strategy literature, firms must carefully balance exploration of new technologies with exploitation of existing capabilities (March, 1991).
+
+**Scope and market focus** risks overextension across EVs, drones, and data centres simultaneously — a pattern that contributed to Northvolt's own failure.
+
+**International expansion** at pace, while simultaneously integrating complex assets, runs counter to the Uppsala model of gradual internationalisation (Johanson & Vahlne, 2009).
+
+**Institutional dependency** on government support in Sweden, Germany, and potentially Canada creates strategic constraints alongside its benefits.
+
+## Q2 — Internationalisation Strategy Assessment
+
+```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: "Show strategic framework visualisation"
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Uppsala model: gradual vs rapid expansion comparison
+stages = ['Operational\nStabilisation', 'Regional\nConsolidation',
+          'Sequential\nExpansion', 'Global\nScale']
+recommended = [1, 2, 3, 4]
+lyten_current = [0.3, 3.8, 4.0, 3.5]
+
+x = np.arange(len(stages))
+fig, ax = plt.subplots(figsize=(10, 5))
+ax.plot(x, recommended, marker='o', label='Uppsala recommended path',
+        color='#2e7dcc', linewidth=2.5)
+ax.plot(x, lyten_current, marker='s', label="Lyten's current approach",
+        color='#d94701', linewidth=2.5, linestyle='--')
+ax.set_xticks(x)
+ax.set_xticklabels(stages)
+ax.set_ylabel('Intensity of activity')
+ax.set_title("Lyten's Internationalisation vs Uppsala Model", fontsize=12)
+ax.legend()
+ax.set_ylim(0, 5)
+plt.tight_layout()
+plt.show()
+```
+
+Lyten's expansion demonstrates features of **strategic asset-seeking** — acquiring Northvolt's European facilities to access industrial infrastructure and skilled labour (Dunning, 1988). However, the pace of expansion is inconsistent with incremental internationalisation theory.
+
+Research on premature scaling highlights that firms expanding too quickly without stable operational foundations face significant performance challenges (Reuber et al., 2021). Lyten is simultaneously integrating distressed assets, developing new battery technologies, and expanding into multiple geographic markets.
+
+**Recommended approach:** A regional hub model, prioritising European stabilisation before North American commitment, with staged geographic expansion aligned to operational readiness.
+
+## Q3 — Geopolitical Alignment: Barrier or Constraint?
+
+Lyten's emphasis on local supply chains and government alignment can be evaluated through two lenses:
+
+| Perspective | Assessment |
+|---|---|
+| Barrier to entry | State-backed incentives and regulatory approvals favour embedded firms (Porter, 2008) |
+| Institutional resource | Government alignment provides legitimacy and access to funding (Peng et al., 2009) |
+| Strategic constraint | Over-dependence reduces flexibility and exposes firm to policy risk |
+| Long-term vulnerability | Subsidies can be withdrawn; political priorities shift |
+
+The key trade-off is between leveraging institutional support for short-term competitive advantage and maintaining the strategic independence required to respond to market changes. Lyten should diversify its sources of support and ensure commercial logic — not political alignment — drives investment decisions.
+
+## Frameworks Applied
+
+- Uppsala Internationalisation Model (Johanson & Vahlne, 2009)
+- Resource-Based View (Barney, 1991)
+- Porter's Five Forces (Porter, 2008)
+- Institutional Theory (Peng et al., 2009)
+- Exploration/Exploitation Framework (March, 1991)
+
+## Key Learnings
+
+This project deepened my ability to apply theoretical frameworks to real strategic situations. Analysing Lyten's position required balancing multiple competing perspectives — which mirrors the complexity of real strategic decision-making — and reinforced the value of structured frameworks in cutting through ambiguous, multi-faceted problems.
