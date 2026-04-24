@@ -131,5 +131,5 @@ It also highlighted how the fundamentals of project management, clear leadership
 ## {{< fa file-pdf >}} Full Case Study
 View or download the complete case study submitted for MNA1096 Project Management.
 
-[{{< fa download >}} Download Case Study](../pdfs/BenQuilliganMNA1096.pdf){target="_blank" .btn .btn-primary}
+[{{< fa download >}} Download Case Study](BenQuilliganMNA1096.pdf){target="_blank" .btn .btn-primary}
 :::
