@@ -23,7 +23,7 @@ website:
         text: Contact
     right:
       - text: CV
-        href: cv/BenQuilligan_CV.pdf
+        href: BenQuilliganCV.pdf
         target: _blank
       - icon: github
         href: https://github.com/ben-quilligan
