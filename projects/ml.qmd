@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning & Advanced Python"
-description: "Stroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset — including EDA, SMOTE oversampling, and ROC curve analysis."
+description: "Stroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset, including EDA, SMOTE oversampling, and ROC curve analysis."
 date: 2026-04-25
 categories: [Python, Machine Learning, Data Analytics]
 image: images/ml-cover.png
@@ -8,10 +8,10 @@ image: images/ml-cover.png
 
 ## Overview
 
-This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset — approximately 20:1 in favour of non-stroke cases — and producing models that could maximise recall of true stroke cases without sacrificing overall performance.
+This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset, approximately 20:1 in favour of non-stroke cases, and producing models that could maximise recall of true stroke cases without sacrificing overall performance.
 
 ::: {.callout-note}
-**Dataset:** Stroke Prediction Dataset — 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type.
+**Dataset:** Stroke Prediction Dataset: 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type.
 :::
 
 ## Tools & Libraries
@@ -51,7 +51,7 @@ print("\nClass distribution:\n", data['stroke'].value_counts())
 print(f"\nClass imbalance ratio: {data['stroke'].value_counts()[0] / data['stroke'].value_counts()[1]:.1f}:1")
 ```
 
-The dataset was significantly imbalanced, with only 4.87% of cases being positive stroke events — a common challenge in medical datasets that requires careful handling to avoid models that simply predict "no stroke" for every patient.
+The dataset was significantly imbalanced, with only 4.87% of cases being positive stroke events, a common challenge in medical datasets that requires careful handling to avoid models that simply predict "no stroke" for every patient.
 
 ### 2. Preprocessing
 
@@ -150,4 +150,4 @@ xgb.fit(X_train_sm, y_train_sm)
 
 ## Key Learnings
 
-Working with this project reinforced the importance of understanding the **business context** behind model selection — in healthcare, recall often matters more than accuracy. It also highlighted the practical challenges of class imbalance and the value of techniques like SMOTE and `class_weight='balanced'` in producing fair models on skewed data.
+Working with this project reinforced the importance of understanding the **business context** behind model selection. In healthcare, recall often matters more than accuracy. It also highlighted the practical challenges of class imbalance and the value of techniques like SMOTE and `class_weight='balanced'` in producing fair models on skewed data.

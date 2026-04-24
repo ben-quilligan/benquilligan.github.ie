@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2026-04-25">
-<meta name="description" content="Stroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset — including EDA, SMOTE oversampling, and ROC curve analysis.">
+<meta name="description" content="Stroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset, including EDA, SMOTE oversampling, and ROC curve analysis.">
 
 <title>Machine Learning &amp; Advanced Python – Ben Quilligan</title>
 <style>
@@ -190,7 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div>
   <div class="description">
-    Stroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset — including EDA, SMOTE oversampling, and ROC curve analysis.
+    Stroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset, including EDA, SMOTE oversampling, and ROC curve analysis.
   </div>
 </div>
 
@@ -215,7 +215,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset — approximately 20:1 in favour of non-stroke cases — and producing models that could maximise recall of true stroke cases without sacrificing overall performance.</p>
+<p>This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset, approximately 20:1 in favour of non-stroke cases, and producing models that could maximise recall of true stroke cases without sacrificing overall performance.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -226,7 +226,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Dataset:</strong> Stroke Prediction Dataset — 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type.</p>
+<p><strong>Dataset:</strong> Stroke Prediction Dataset: 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type.</p>
 </div>
 </div>
 </section>
@@ -268,7 +268,7 @@ Note
 <section id="exploratory-data-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="exploratory-data-analysis">1. Exploratory Data Analysis</h3>
 <p>The dataset was first examined for structure, missing values, and class imbalance. BMI had 201 missing values, which were imputed using the median. A single record with gender “Other” was removed.</p>
-<div id="5e85f77f" class="cell" data-execution_count="1">
+<div id="3af8a9b6" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show EDA code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -286,11 +286,11 @@ Note
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Class imbalance ratio: </span><span class="sc">{</span>data[<span class="st">'stroke'</span>]<span class="sc">.</span>value_counts()[<span class="dv">0</span>] <span class="op">/</span> data[<span class="st">'stroke'</span>]<span class="sc">.</span>value_counts()[<span class="dv">1</span>]<span class="sc">:.1f}</span><span class="ss">:1"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<p>The dataset was significantly imbalanced, with only 4.87% of cases being positive stroke events — a common challenge in medical datasets that requires careful handling to avoid models that simply predict “no stroke” for every patient.</p>
+<p>The dataset was significantly imbalanced, with only 4.87% of cases being positive stroke events, a common challenge in medical datasets that requires careful handling to avoid models that simply predict “no stroke” for every patient.</p>
 </section>
 <section id="preprocessing" class="level3">
 <h3 class="anchored" data-anchor-id="preprocessing">2. Preprocessing</h3>
-<div id="cfbb2be4" class="cell" data-execution_count="2">
+<div id="2b8af6d4" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Show preprocessing code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
@@ -330,7 +330,7 @@ Note
 <section id="model-training" class="level3">
 <h3 class="anchored" data-anchor-id="model-training">3. Model Training</h3>
 <p>Three classifiers were trained and compared:</p>
-<div id="52ce31d4" class="cell" data-execution_count="3">
+<div id="c91893df" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Show model training code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
@@ -422,7 +422,7 @@ Tip
 </section>
 <section id="key-learnings" class="level2">
 <h2 class="anchored" data-anchor-id="key-learnings">Key Learnings</h2>
-<p>Working with this project reinforced the importance of understanding the <strong>business context</strong> behind model selection — in healthcare, recall often matters more than accuracy. It also highlighted the practical challenges of class imbalance and the value of techniques like SMOTE and <code>class_weight='balanced'</code> in producing fair models on skewed data.</p>
+<p>Working with this project reinforced the importance of understanding the <strong>business context</strong> behind model selection. In healthcare, recall often matters more than accuracy. It also highlighted the practical challenges of class imbalance and the value of techniques like SMOTE and <code>class_weight='balanced'</code> in producing fair models on skewed data.</p>
 
 
 </section>
