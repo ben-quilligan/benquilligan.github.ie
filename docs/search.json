@@ -1,87 +1,101 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
+    "objectID": "certifications.html",
+    "href": "certifications.html",
+    "title": "Certifications",
     "section": "",
-    "text": "I am a final-year Business Studies student at Dublin City University (DCU), specialising in Data Analytics, graduating in Summer 2026. I am tracking for First Class Honours based on my second and current year results.\nI was born and raised in Kildare, and attended two Gaelscoils growing up in Kilcock and Lucan, achieving 566 points in my Leaving Certificate.\nMy interest in data analytics primarily comes from my 3rd year Intra placement in the digital team at PwC. During my 14 months there I had the opportunity to work on several very interesting analytics projects and gained experience with a wide range of tools. Going forward in my career I hope to continue using and devloping these skills working on meaningful projects."
+    "text": "I have completed over 30 courses across two platforms — Kubicle and DataCamp — covering data analytics, Python, Power BI, Excel, SQL, and more. All Kubicle certificates are CPD Approved by Chartered Accountants Ireland."
   },
   {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About Me",
+    "objectID": "certifications.html#summary",
+    "href": "certifications.html#summary",
+    "title": "Certifications",
+    "section": "Summary",
+    "text": "Summary\n\n\n\nTotal courses completed\n30+\n\n\nPlatforms\nKubicle, DataCamp\n\n\nCPD credits earned\n45+\n\n\nAccreditation\nChartered Accountants Ireland (CPD Approved)"
+  },
+  {
+    "objectID": "certifications.html#featured-certificates",
+    "href": "certifications.html#featured-certificates",
+    "title": "Certifications",
+    "section": "Featured Certificates",
+    "text": "Featured Certificates\n\n\n\n\n\n\n\n\nNote Predicting Future Values in AI Fundamentals\n\n\n\nIssuer: Kubicle · Date: April 25, 2024 · Credits: 1.0 CPD\n View Certificate\n\n\n\n\n\n\n\n\n\n\nNote Functions, Conditionality and Loops in Python Fundamentals\n\n\n\nIssuer: Kubicle · Date: April 25, 2024 · Credits: 2.5 CPD\n View Certificate\n\n\n\n\n\n\n\n\n\n\nNote Introduction to Visualizations in Power BI\n\n\n\nIssuer: Kubicle · Date: June 18, 2024 · Credits: 2.0 CPD\n View Certificate\n\n\n\n\n\n\n\n\n\n\nNote Finance Functions in Excel\n\n\n\nIssuer: Kubicle · Date: March 8, 2024 · Credits: 1.0 CPD\n View Certificate\n\n\n\n\n\n\n\n\n\n\nNote Introduction to NumPy\n\n\n\nIssuer: DataCamp · Date: November 25, 2025 · Length: 4 hrs\n View Certificate"
+  },
+  {
+    "objectID": "certifications.html#all-kubicle-courses",
+    "href": "certifications.html#all-kubicle-courses",
+    "title": "Certifications",
+    "section": "All Kubicle Courses",
+    "text": "All Kubicle Courses\n\n AI Fundamentals\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nPredicting Future Values in AI Fundamentals\nApril 25, 2024\n1.0\n\n\nBusiness Applications of AI in AI Fundamentals\nApril 21, 2024\n1.0\n\n\nIntroduction to Artificial Intelligence in AI Fundamentals\nApril 21, 2024\n1.0\n\n\n\n\n\n Data Ethics & Risk\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nIntroduction to Data Ethics in Data Ethics & Risk\nApril 3, 2024\n1.0\n\n\n\n\n\n Data Literacy\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nPlanning a Data Driven Project in Data Literacy\nApril 14, 2024\n1.0\n\n\nThinking and Communicating with Data in Data Literacy\nMarch 27, 2024\n1.5\n\n\nIntroduction to Data Preparation in Data Literacy\nMarch 14, 2024\n1.0\n\n\nIntroduction to Data and Databases in Data Literacy\nMarch 7, 2024\n1.0\n\n\n\n\n\n Data Presentation Skills\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nTelling Stories with Data in Data Presentation Skills\nApril 22, 2024\n1.0\n\n\nPresenting Your Data in Data Presentation Skills\nApril 20, 2024\n1.0\n\n\nCommunicating Data Effectively in Data Presentation Skills\nMarch 16, 2024\n1.0\n\n\n\n\n\n Data Security\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nHandling Data Securely and Responsibly in Data Security\nApril 22, 2026\n1.5\n\n\nKeeping Your Information Safe in Data Security\nApril 22, 2026\n1.0\n\n\n\n\n\n Excel\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nCharts in Depth in Excel\nApril 2024\n1.0\n\n\nLookups and Database Functions in Excel\nApril 24, 2024\n2.0\n\n\nPivot Tables in Excel\nApril 16, 2024\n2.0\n\n\nText, Time, and Dates in Excel\nMarch 13, 2024\n2.0\n\n\nFinance Functions in Excel\nMarch 8, 2024\n1.0\n\n\nFormulas and Functions in Excel\nNovember 24, 2022\n3.0\n\n\nData Manipulation and Formatting in Excel\nOctober 24, 2022\n2.0\n\n\n\n\n\n Power BI\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nIntroduction to Visualizations in Power BI\nJune 18, 2024\n2.0\n\n\nBuilding Your First Dashboard in Power BI\nJune 18, 2024\n1.5\n\n\n\n\n\n Python Fundamentals\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nFunctions, Conditionality and Loops in Python Fundamentals\nApril 25, 2024\n2.5\n\n\nPython Fundamentals in Python Fundamentals\nApril 25, 2024\n2.0\n\n\n\n\n\n SQL\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nUnderstanding SQL Databases in SQL\nApril 22, 2024\n1.5\n\n\n\n\n\n Statistical Analysis\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nProbability Distributions in Statistical Analysis\nApril 25, 2024\n2.0\n\n\nPrinciples of Statistics in Statistical Analysis\nApril 18, 2024\n1.5\n\n\nProbability Principles in Statistical Analysis\nApril 17, 2024\n1.5\n\n\nIntroduction to Predictive Modeling in Statistical Analysis\nApril 16, 2024\n2.0\n\n\n\n\n\n Tableau\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nIntroducing Tableau in Tableau\nApril 12, 2023\n1.5"
+  },
+  {
+    "objectID": "certifications.html#datacamp",
+    "href": "certifications.html#datacamp",
+    "title": "Certifications",
+    "section": "DataCamp",
+    "text": "DataCamp\n\n\n\nCourse\nDate\nLength\n\n\n\n\nIntroduction to NumPy\nNovember 25, 2025\n4 hrs"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ben Quilligan",
     "section": "",
-    "text": "I am a final-year Business Studies student at Dublin City University (DCU), specialising in Data Analytics, graduating in Summer 2026. I am tracking for First Class Honours based on my second and current year results.\nI was born and raised in Kildare, and attended two Gaelscoils growing up in Kilcock and Lucan, achieving 566 points in my Leaving Certificate.\nMy interest in data analytics primarily comes from my 3rd year Intra placement in the digital team at PwC. During my 14 months there I had the opportunity to work on several very interesting analytics projects and gained experience with a wide range of tools. Going forward in my career I hope to continue using and devloping these skills working on meaningful projects."
+    "text": "I am a final-year Business Studies student at Dublin City University, specialising in Data Analytics. During this course I have developed strong critical thinking and problem-solving skills which I hope to put to use in a future career in analytics.\nHere you can learn more about me and some of the projects I have completed throughout the duration of this course.\n\n\n\n\n\n\nNote\n\n\n\nThis site is my ePortfolio, showcasing academic projects, certifications, and professional experience built during my degree at DCU."
   },
   {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About Me",
-    "section": "Skills",
-    "text": "Skills\n\n\nTechnical\n\nPython & NumPy\nSQL\nPower BI & Power Automate\nMicrosoft Excel (advanced)\nDatabricks & Workbench\nSharePoint & Visio\n\n\nProfessional\n\nData Analytics\nStakeholder Communication\nProject Management\nProcess Mapping\nCritical Thinking\nFluent Irish Speaker"
-  },
-  {
-    "objectID": "about.html#goals",
-    "href": "about.html#goals",
-    "title": "About Me",
-    "section": "Goals",
-    "text": "Goals\nI am looking for a graduate role with a focus on data analytics, where I can apply the technical and interpersonal skills developed during my degree and placement at PwC."
-  },
-  {
-    "objectID": "projects/ned.html",
-    "href": "projects/ned.html",
-    "title": "New Enterprise Development — Mantis",
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Ben Quilligan",
     "section": "",
-    "text": "Mantis is a 500ml ready-to-drink chocolate protein shake made with Irish UHT milk, cricket powder, and buffalo worm powder. This project involved developing a full business plan for Mantis as part of the BAA1003 New Enterprise Development module at DCU, under the supervision of Dr. Eric Clinton.\nThe plan was developed by a five-person founding team, with me serving as CEO and product development lead.\n\n\n\n\n\n\nNote\n\n\n\nMantis delivers 60 grams of protein per bottle (12g per 100ml) — the highest protein density of any RTD shake currently available on the Irish market. Competitors including Avonmore, GetPro, and MyProtein range from 6 to 9g per 100ml."
+    "text": "I am a final-year Business Studies student at Dublin City University, specialising in Data Analytics. During this course I have developed strong critical thinking and problem-solving skills which I hope to put to use in a future career in analytics.\nHere you can learn more about me and some of the projects I have completed throughout the duration of this course.\n\n\n\n\n\n\nNote\n\n\n\nThis site is my ePortfolio, showcasing academic projects, certifications, and professional experience built during my degree at DCU."
   },
   {
-    "objectID": "projects/ned.html#overview",
-    "href": "projects/ned.html#overview",
-    "title": "New Enterprise Development — Mantis",
+    "objectID": "index.html#quick-links",
+    "href": "index.html#quick-links",
+    "title": "Ben Quilligan",
+    "section": "Quick Links",
+    "text": "Quick Links\n\n\n\nSection\nDescription\n\n\n\n\nAbout Me\nBackground, skills, and goals\n\n\nProjects\nAcademic work with Python code\n\n\nCertifications\nKubicle and DataCamp credentials\n\n\nCV\nFull curriculum vitae (PDF)\n\n\nReflection\nWhat I learned throughout this module"
+  },
+  {
+    "objectID": "projects/ml.html",
+    "href": "projects/ml.html",
+    "title": "Machine Learning & Advanced Python",
     "section": "",
-    "text": "Mantis is a 500ml ready-to-drink chocolate protein shake made with Irish UHT milk, cricket powder, and buffalo worm powder. This project involved developing a full business plan for Mantis as part of the BAA1003 New Enterprise Development module at DCU, under the supervision of Dr. Eric Clinton.\nThe plan was developed by a five-person founding team, with me serving as CEO and product development lead.\n\n\n\n\n\n\nNote\n\n\n\nMantis delivers 60 grams of protein per bottle (12g per 100ml) — the highest protein density of any RTD shake currently available on the Irish market. Competitors including Avonmore, GetPro, and MyProtein range from 6 to 9g per 100ml."
+    "text": "This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset — approximately 20:1 in favour of non-stroke cases — and producing models that could maximise recall of true stroke cases without sacrificing overall performance.\n\n\n\n\n\n\nNote\n\n\n\nDataset: Stroke Prediction Dataset — 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type."
   },
   {
-    "objectID": "projects/ned.html#the-product",
-    "href": "projects/ned.html#the-product",
-    "title": "New Enterprise Development — Mantis",
-    "section": "The Product",
-    "text": "The Product\nBoth insect species used in Mantis are fully authorised under EU Novel Food regulations — crickets from February 2022 and buffalo worms from January 2023. The product is UHT shelf-stable, requiring no refrigeration until opened, and retails at €4.00 per bottle.\nThe recipe was developed through 27 iterations over the feasibility study period, with a blind taste test conducted with 26 participants. The final formulation achieved a 54% top-tier rating of 5/5.\n\n\n\nFeature\nDetail\n\n\n\n\nProtein per bottle\n60g (12g/100ml)\n\n\nRetail price\n€4.00\n\n\nWholesale price\n€2.67\n\n\nShelf life\nAmbient (UHT)\n\n\nProtein source\nCricket + buffalo worm powder\n\n\nCO₂ vs whey\n6.5× lower per kg of protein"
+    "objectID": "projects/ml.html#overview",
+    "href": "projects/ml.html#overview",
+    "title": "Machine Learning & Advanced Python",
+    "section": "",
+    "text": "This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset — approximately 20:1 in favour of non-stroke cases — and producing models that could maximise recall of true stroke cases without sacrificing overall performance.\n\n\n\n\n\n\nNote\n\n\n\nDataset: Stroke Prediction Dataset — 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type."
   },
   {
-    "objectID": "projects/ned.html#market-opportunity",
-    "href": "projects/ned.html#market-opportunity",
-    "title": "New Enterprise Development — Mantis",
-    "section": "Market Opportunity",
-    "text": "Market Opportunity\nThe global protein supplement market is valued at approximately €20 billion, growing at 8–10% per annum. The Irish RTD protein beverage segment has seen 14.3% CAGR (2020–2024). Mantis identified a clear first-mover opportunity — no insect protein RTD drink currently exists in the Irish market.\nPrimary research (n=157 survey responses) confirmed that 77% of respondents would be open to trying an insect-protein drink, with taste and protein content identified as the primary purchase drivers."
+    "objectID": "projects/ml.html#tools-libraries",
+    "href": "projects/ml.html#tools-libraries",
+    "title": "Machine Learning & Advanced Python",
+    "section": "Tools & Libraries",
+    "text": "Tools & Libraries\n\n\n\nLibrary\nPurpose\n\n\n\n\npandas / numpy\nData manipulation and preprocessing\n\n\nscikit-learn\nModel training, evaluation, GridSearchCV\n\n\nimbalanced-learn\nSMOTE oversampling\n\n\nxgboost\nXGBoost classifier\n\n\nseaborn / matplotlib\nData visualisation"
   },
   {
-    "objectID": "projects/ned.html#financial-projections",
-    "href": "projects/ned.html#financial-projections",
-    "title": "New Enterprise Development — Mantis",
-    "section": "Financial Projections",
-    "text": "Financial Projections\n\n\nShow projection code\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nyears = ['Year 1 (2027)', 'Year 2 (2028)', 'Year 3 (2029)']\nrevenue = [93454, 542558, 2436056]\nnet_profit = [-23752, 73244, 562448]\nunits = [35045, 203459, 913521]\n\nfig, axes = plt.subplots(1, 2, figsize=(12, 5))\n\n# Revenue and profit\nx = np.arange(len(years))\naxes[0].bar(x - 0.2, revenue, 0.4, label='Revenue (€)', color='#2e7dcc', alpha=0.85)\naxes[0].bar(x + 0.2, net_profit, 0.4, label='Net Profit (€)', color='#0d1b2a', alpha=0.85)\naxes[0].set_xticks(x)\naxes[0].set_xticklabels(years)\naxes[0].set_title('Revenue vs Net Profit (€)', fontsize=12)\naxes[0].legend()\naxes[0].yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'€{x:,.0f}'))\n\n# Units sold\naxes[1].plot(years, units, marker='o', color='#2e7dcc', linewidth=2.5)\naxes[1].fill_between(years, units, alpha=0.1, color='#2e7dcc')\naxes[1].set_title('Units Sold by Year', fontsize=12)\naxes[1].yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'{x:,.0f}'))\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\nMetric\nYear 1 (2027)\nYear 2 (2028)\nYear 3 (2029)\n\n\n\n\nSales Revenue\n€93,454\n€542,558\n€2,436,056\n\n\nNet Profit / (Loss)\n(€23,752)\n€73,244\n€562,448\n\n\nUnits Sold\n35,045\n203,459\n913,521\n\n\nGross Margin\n34.6%\n37.8%\n40.9%\n\n\n\nMantis is projected to break even operationally in Year 2, reaching a net profit of €562,448 with revenue of €2,436,056 by Year 3."
+    "objectID": "projects/ml.html#methodology",
+    "href": "projects/ml.html#methodology",
+    "title": "Machine Learning & Advanced Python",
+    "section": "Methodology",
+    "text": "Methodology\n\n1. Exploratory Data Analysis\nThe dataset was first examined for structure, missing values, and class imbalance. BMI had 201 missing values, which were imputed using the median. A single record with gender “Other” was removed.\n\n\nShow EDA code\nimport pandas as pd\nimport numpy as np\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Load and inspect the dataset\nfile = '/content/strokedataset.csv'\ndata = pd.read_csv(file)\n\nprint(\"Dataset shape:\", data.shape)\nprint(\"\\nMissing values:\\n\", data.isna().sum())\nprint(\"\\nClass distribution:\\n\", data['stroke'].value_counts())\nprint(f\"\\nClass imbalance ratio: {data['stroke'].value_counts()[0] / data['stroke'].value_counts()[1]:.1f}:1\")\n\n\nThe dataset was significantly imbalanced, with only 4.87% of cases being positive stroke events — a common challenge in medical datasets that requires careful handling to avoid models that simply predict “no stroke” for every patient.\n\n\n2. Preprocessing\n\n\nShow preprocessing code\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.preprocessing import LabelEncoder, StandardScaler\nfrom imblearn.over_sampling import SMOTE\n\n# Impute missing BMI with median\ndata['bmi'] = pd.to_numeric(data['bmi'], errors='coerce')\ndata['bmi'] = data['bmi'].fillna(data['bmi'].median())\n\n# Drop ID and remove 'Other' gender\ndata.drop(columns=['id'], inplace=True)\ndata = data[data['gender'] != 'Other']\n\n# Encode categorical variables\nle = LabelEncoder()\nfor col in ['gender', 'ever_married', 'work_type', 'Residence_type', 'smoking_status']:\n    data[col] = le.fit_transform(data[col])\n\n# Split, scale, and apply SMOTE\nX = data.drop('stroke', axis=1)\ny = data['stroke']\n\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, stratify=y, random_state=42)\n\nscaler = StandardScaler()\nX_train_sc = scaler.fit_transform(X_train)\nX_test_sc = scaler.transform(X_test)\n\nsmote = SMOTE(sampling_strategy=0.3, k_neighbors=5, random_state=42)\nX_train_sm, y_train_sm = smote.fit_resample(X_train_sc, y_train)\n\n\nSMOTE (Synthetic Minority Over-sampling Technique) was applied with a sampling strategy of 0.3, generating synthetic stroke cases to reduce the class imbalance in the training set without duplicating existing records.\n\n\n3. Model Training\nThree classifiers were trained and compared:\n\n\nShow model training code\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.model_selection import GridSearchCV\nfrom xgboost import XGBClassifier\n\n# Logistic Regression\nlog_reg = LogisticRegression(max_iter=1000, class_weight='balanced', random_state=42)\nlog_reg.fit(X_train_sm, y_train_sm)\n\n# Random Forest with GridSearchCV\nparam_grid_rf = {\n    'n_estimators': [100, 200],\n    'max_depth': [4, 6, None],\n    'min_samples_leaf': [2, 5],\n    'class_weight': ['balanced']\n}\ngrid_rf = GridSearchCV(\n    RandomForestClassifier(random_state=42),\n    param_grid_rf, scoring='roc_auc', cv=5, n_jobs=-1)\ngrid_rf.fit(X_train_sm, y_train_sm)\nbest_rf = grid_rf.best_estimator_\n\n# XGBoost\nxgb = XGBClassifier(\n    scale_pos_weight=10, max_depth=4, learning_rate=0.05,\n    n_estimators=200, min_child_weight=3, gamma=0.2,\n    subsample=0.8, colsample_bytree=0.8,\n    eval_metric='logloss', random_state=42, verbosity=0)\nxgb.fit(X_train_sm, y_train_sm)"
   },
   {
-    "objectID": "projects/ned.html#go-to-market-strategy",
-    "href": "projects/ned.html#go-to-market-strategy",
-    "title": "New Enterprise Development — Mantis",
-    "section": "Go-to-Market Strategy",
-    "text": "Go-to-Market Strategy\nDistribution in Year 1 targets Holland & Barrett (14 Irish stores), Nourish Health Stores (20 stores), and independent gyms nationwide — placing the product on over 780 shelves. From Year 3, the plan includes expansion into national grocery multiples (Tesco Ireland and Dunnes Stores)."
+    "objectID": "projects/ml.html#results",
+    "href": "projects/ml.html#results",
+    "title": "Machine Learning & Advanced Python",
+    "section": "Results",
+    "text": "Results\n\n\n\nModel\nAccuracy\nPrecision\nRecall\nF1-Score\nROC-AUC\n\n\n\n\nLogistic Regression\n0.7423\n0.1891\n0.7143\n0.2993\n0.7912\n\n\nRandom Forest\n0.9141\n0.3448\n0.2857\n0.3125\n0.8203\n\n\nXGBoost\n0.8200\n0.2174\n0.5714\n0.3143\n0.7834\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nKey finding: Random Forest achieved the highest ROC-AUC (0.82), making it the strongest overall performer. For a medical screening context where missing a stroke is more costly than a false alarm, Logistic Regression’s higher recall (0.71) may be preferable despite lower precision."
   },
   {
-    "objectID": "projects/ned.html#key-learnings",
-    "href": "projects/ned.html#key-learnings",
-    "title": "New Enterprise Development — Mantis",
+    "objectID": "projects/ml.html#key-learnings",
+    "href": "projects/ml.html#key-learnings",
+    "title": "Machine Learning & Advanced Python",
     "section": "Key Learnings",
-    "text": "Key Learnings\nThis project gave me practical experience across the full cycle of new venture development — from product ideation and consumer research through to financial modelling and investor pitch preparation. Taking the role of CEO taught me how to lead a multi-functional team, align competing priorities, and translate strategic goals into operational plans."
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "A selection of academic projects completed as part of my Bachelor of Business Studies (Data Analytics) at Dublin City University.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning & Advanced Python\n\n\n\nPython\n\nMachine Learning\n\nData Analytics\n\n\n\nStroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset — including EDA, SMOTE oversampling, and ROC curve analysis.\n\n\n\nApr 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Management — Lyten Case Study\n\n\n\nStrategy\n\nBusiness\n\nAcademic\n\n\n\nA strategic analysis of Lyten’s acquisition of Northvolt assets, examining post-acquisition integration, internationalisation strategy, and geopolitical alignment using core…\n\n\n\nApr 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew Enterprise Development — Mantis\n\n\n\nEntrepreneurship\n\nBusiness Planning\n\nStrategy\n\n\n\nA full business plan for Mantis, an insect-protein ready-to-drink shake targeting the Irish health and wellness market. Developed as part of the BAA1003 New Enterprise…\n\n\n\nApr 1, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Key Learnings\nWorking with this project reinforced the importance of understanding the business context behind model selection — in healthcare, recall often matters more than accuracy. It also highlighted the practical challenges of class imbalance and the value of techniques like SMOTE and class_weight='balanced' in producing fair models on skewed data."
   },
   {
     "objectID": "projects/pm.html",
@@ -133,102 +147,25 @@
     "text": "Key Learnings\nThis project deepened my ability to apply theoretical frameworks to real strategic situations. Analysing Lyten’s position required balancing multiple competing perspectives — which mirrors the complexity of real strategic decision-making — and reinforced the value of structured frameworks in cutting through ambiguous, multi-faceted problems."
   },
   {
-    "objectID": "projects/ml.html",
-    "href": "projects/ml.html",
-    "title": "Machine Learning & Advanced Python",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset — approximately 20:1 in favour of non-stroke cases — and producing models that could maximise recall of true stroke cases without sacrificing overall performance.\n\n\n\n\n\n\nNote\n\n\n\nDataset: Stroke Prediction Dataset — 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type."
+    "text": "I am currently in my final year at Dublin City University and actively looking for a graduate role with a focus on data analytics. If you would like to get in touch, please use any of the channels below."
   },
   {
-    "objectID": "projects/ml.html#overview",
-    "href": "projects/ml.html#overview",
-    "title": "Machine Learning & Advanced Python",
-    "section": "",
-    "text": "This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset — approximately 20:1 in favour of non-stroke cases — and producing models that could maximise recall of true stroke cases without sacrificing overall performance.\n\n\n\n\n\n\nNote\n\n\n\nDataset: Stroke Prediction Dataset — 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type."
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Contact",
+    "section": "Get in Touch",
+    "text": "Get in Touch\n\n\n\n Email\nbenquilligan1@gmail.com\n\n\n LinkedIn\nlinkedin.com/in/benquilligan\n\n\n GitHub\ngithub.com/ben-quilligan\n\n\n Location\nDublin, Ireland\n\n\n\n\n\n\n\n\n\nNote CV\n\n\n\nMy full CV is available to download as a PDF.\n Download CV\n\n\n\n\n\n\n\n\nTip Availability\n\n\n\nI am graduating in Summer 2026 and available for graduate roles from that point. I am open to roles in data analytics, business intelligence, and digital transformation."
   },
   {
-    "objectID": "projects/ml.html#tools-libraries",
-    "href": "projects/ml.html#tools-libraries",
-    "title": "Machine Learning & Advanced Python",
-    "section": "Tools & Libraries",
-    "text": "Tools & Libraries\n\n\n\nLibrary\nPurpose\n\n\n\n\npandas / numpy\nData manipulation and preprocessing\n\n\nscikit-learn\nModel training, evaluation, GridSearchCV\n\n\nimbalanced-learn\nSMOTE oversampling\n\n\nxgboost\nXGBoost classifier\n\n\nseaborn / matplotlib\nData visualisation"
-  },
-  {
-    "objectID": "projects/ml.html#methodology",
-    "href": "projects/ml.html#methodology",
-    "title": "Machine Learning & Advanced Python",
-    "section": "Methodology",
-    "text": "Methodology\n\n1. Exploratory Data Analysis\nThe dataset was first examined for structure, missing values, and class imbalance. BMI had 201 missing values, which were imputed using the median. A single record with gender “Other” was removed.\n\n\nShow EDA code\nimport pandas as pd\nimport numpy as np\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Load and inspect the dataset\nfile = '/content/strokedataset.csv'\ndata = pd.read_csv(file)\n\nprint(\"Dataset shape:\", data.shape)\nprint(\"\\nMissing values:\\n\", data.isna().sum())\nprint(\"\\nClass distribution:\\n\", data['stroke'].value_counts())\nprint(f\"\\nClass imbalance ratio: {data['stroke'].value_counts()[0] / data['stroke'].value_counts()[1]:.1f}:1\")\n\n\nThe dataset was significantly imbalanced, with only 4.87% of cases being positive stroke events — a common challenge in medical datasets that requires careful handling to avoid models that simply predict “no stroke” for every patient.\n\n\n2. Preprocessing\n\n\nShow preprocessing code\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.preprocessing import LabelEncoder, StandardScaler\nfrom imblearn.over_sampling import SMOTE\n\n# Impute missing BMI with median\ndata['bmi'] = pd.to_numeric(data['bmi'], errors='coerce')\ndata['bmi'] = data['bmi'].fillna(data['bmi'].median())\n\n# Drop ID and remove 'Other' gender\ndata.drop(columns=['id'], inplace=True)\ndata = data[data['gender'] != 'Other']\n\n# Encode categorical variables\nle = LabelEncoder()\nfor col in ['gender', 'ever_married', 'work_type', 'Residence_type', 'smoking_status']:\n    data[col] = le.fit_transform(data[col])\n\n# Split, scale, and apply SMOTE\nX = data.drop('stroke', axis=1)\ny = data['stroke']\n\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, stratify=y, random_state=42)\n\nscaler = StandardScaler()\nX_train_sc = scaler.fit_transform(X_train)\nX_test_sc = scaler.transform(X_test)\n\nsmote = SMOTE(sampling_strategy=0.3, k_neighbors=5, random_state=42)\nX_train_sm, y_train_sm = smote.fit_resample(X_train_sc, y_train)\n\n\nSMOTE (Synthetic Minority Over-sampling Technique) was applied with a sampling strategy of 0.3, generating synthetic stroke cases to reduce the class imbalance in the training set without duplicating existing records.\n\n\n3. Model Training\nThree classifiers were trained and compared:\n\n\nShow model training code\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.model_selection import GridSearchCV\nfrom xgboost import XGBClassifier\n\n# Logistic Regression\nlog_reg = LogisticRegression(max_iter=1000, class_weight='balanced', random_state=42)\nlog_reg.fit(X_train_sm, y_train_sm)\n\n# Random Forest with GridSearchCV\nparam_grid_rf = {\n    'n_estimators': [100, 200],\n    'max_depth': [4, 6, None],\n    'min_samples_leaf': [2, 5],\n    'class_weight': ['balanced']\n}\ngrid_rf = GridSearchCV(\n    RandomForestClassifier(random_state=42),\n    param_grid_rf, scoring='roc_auc', cv=5, n_jobs=-1)\ngrid_rf.fit(X_train_sm, y_train_sm)\nbest_rf = grid_rf.best_estimator_\n\n# XGBoost\nxgb = XGBClassifier(\n    scale_pos_weight=10, max_depth=4, learning_rate=0.05,\n    n_estimators=200, min_child_weight=3, gamma=0.2,\n    subsample=0.8, colsample_bytree=0.8,\n    eval_metric='logloss', random_state=42, verbosity=0)\nxgb.fit(X_train_sm, y_train_sm)"
-  },
-  {
-    "objectID": "projects/ml.html#results",
-    "href": "projects/ml.html#results",
-    "title": "Machine Learning & Advanced Python",
-    "section": "Results",
-    "text": "Results\n\n\n\nModel\nAccuracy\nPrecision\nRecall\nF1-Score\nROC-AUC\n\n\n\n\nLogistic Regression\n0.7423\n0.1891\n0.7143\n0.2993\n0.7912\n\n\nRandom Forest\n0.9141\n0.3448\n0.2857\n0.3125\n0.8203\n\n\nXGBoost\n0.8200\n0.2174\n0.5714\n0.3143\n0.7834\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nKey finding: Random Forest achieved the highest ROC-AUC (0.82), making it the strongest overall performer. For a medical screening context where missing a stroke is more costly than a false alarm, Logistic Regression’s higher recall (0.71) may be preferable despite lower precision."
-  },
-  {
-    "objectID": "projects/ml.html#key-learnings",
-    "href": "projects/ml.html#key-learnings",
-    "title": "Machine Learning & Advanced Python",
-    "section": "Key Learnings",
-    "text": "Key Learnings\nWorking with this project reinforced the importance of understanding the business context behind model selection — in healthcare, recall often matters more than accuracy. It also highlighted the practical challenges of class imbalance and the value of techniques like SMOTE and class_weight='balanced' in producing fair models on skewed data."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Ben Quilligan",
-    "section": "",
-    "text": "I am a final-year Business Studies student at Dublin City University, specialising in Data Analytics. During this course I have developed strong critical thinking and problem-solving skills which I hope to put to use in a future career in analytics.\nHere you can learn more about me and some of the projects I have completed throughout the duration of this course.\n\n\n\n\n\n\nNote\n\n\n\nThis site is my ePortfolio, showcasing academic projects, certifications, and professional experience built during my degree at DCU."
-  },
-  {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Ben Quilligan",
-    "section": "",
-    "text": "I am a final-year Business Studies student at Dublin City University, specialising in Data Analytics. During this course I have developed strong critical thinking and problem-solving skills which I hope to put to use in a future career in analytics.\nHere you can learn more about me and some of the projects I have completed throughout the duration of this course.\n\n\n\n\n\n\nNote\n\n\n\nThis site is my ePortfolio, showcasing academic projects, certifications, and professional experience built during my degree at DCU."
-  },
-  {
-    "objectID": "index.html#quick-links",
-    "href": "index.html#quick-links",
-    "title": "Ben Quilligan",
-    "section": "Quick Links",
-    "text": "Quick Links\n\n\n\nSection\nDescription\n\n\n\n\nAbout Me\nBackground, skills, and goals\n\n\nProjects\nAcademic work with Python code\n\n\nCertifications\nKubicle and DataCamp credentials\n\n\nCV\nFull curriculum vitae (PDF)\n\n\nReflection\nWhat I learned throughout this module"
-  },
-  {
-    "objectID": "certifications.html",
-    "href": "certifications.html",
-    "title": "Certifications",
-    "section": "",
-    "text": "I have completed over 30 courses across two platforms — Kubicle and DataCamp — covering data analytics, Python, Power BI, Excel, SQL, and more. All Kubicle certificates are CPD Approved by Chartered Accountants Ireland."
-  },
-  {
-    "objectID": "certifications.html#summary",
-    "href": "certifications.html#summary",
-    "title": "Certifications",
-    "section": "Summary",
-    "text": "Summary\n\n\n\nTotal courses completed\n30+\n\n\nPlatforms\nKubicle, DataCamp\n\n\nCPD credits earned\n45+\n\n\nAccreditation\nChartered Accountants Ireland (CPD Approved)"
-  },
-  {
-    "objectID": "certifications.html#featured-certificates",
-    "href": "certifications.html#featured-certificates",
-    "title": "Certifications",
-    "section": "Featured Certificates",
-    "text": "Featured Certificates\n\n\n\n\n\n\n\n\nNote Predicting Future Values in AI Fundamentals\n\n\n\nIssuer: Kubicle · Date: April 25, 2024 · Credits: 1.0 CPD\n View Certificate\n\n\n\n\n\n\n\n\n\n\nNote Functions, Conditionality and Loops in Python Fundamentals\n\n\n\nIssuer: Kubicle · Date: April 25, 2024 · Credits: 2.5 CPD\n View Certificate\n\n\n\n\n\n\n\n\n\n\nNote Introduction to Visualizations in Power BI\n\n\n\nIssuer: Kubicle · Date: June 18, 2024 · Credits: 2.0 CPD\n View Certificate\n\n\n\n\n\n\n\n\n\n\nNote Finance Functions in Excel\n\n\n\nIssuer: Kubicle · Date: March 8, 2024 · Credits: 1.0 CPD\n View Certificate\n\n\n\n\n\n\n\n\n\n\nNote Introduction to NumPy\n\n\n\nIssuer: DataCamp · Date: November 25, 2025 · Length: 4 hrs\n View Certificate"
-  },
-  {
-    "objectID": "certifications.html#all-kubicle-courses",
-    "href": "certifications.html#all-kubicle-courses",
-    "title": "Certifications",
-    "section": "All Kubicle Courses",
-    "text": "All Kubicle Courses\n\n AI Fundamentals\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nPredicting Future Values in AI Fundamentals\nApril 25, 2024\n1.0\n\n\nBusiness Applications of AI in AI Fundamentals\nApril 21, 2024\n1.0\n\n\nIntroduction to Artificial Intelligence in AI Fundamentals\nApril 21, 2024\n1.0\n\n\n\n\n\n Data Ethics & Risk\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nIntroduction to Data Ethics in Data Ethics & Risk\nApril 3, 2024\n1.0\n\n\n\n\n\n Data Literacy\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nPlanning a Data Driven Project in Data Literacy\nApril 14, 2024\n1.0\n\n\nThinking and Communicating with Data in Data Literacy\nMarch 27, 2024\n1.5\n\n\nIntroduction to Data Preparation in Data Literacy\nMarch 14, 2024\n1.0\n\n\nIntroduction to Data and Databases in Data Literacy\nMarch 7, 2024\n1.0\n\n\n\n\n\n Data Presentation Skills\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nTelling Stories with Data in Data Presentation Skills\nApril 22, 2024\n1.0\n\n\nPresenting Your Data in Data Presentation Skills\nApril 20, 2024\n1.0\n\n\nCommunicating Data Effectively in Data Presentation Skills\nMarch 16, 2024\n1.0\n\n\n\n\n\n Data Security\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nHandling Data Securely and Responsibly in Data Security\nApril 22, 2026\n1.5\n\n\nKeeping Your Information Safe in Data Security\nApril 22, 2026\n1.0\n\n\n\n\n\n Excel\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nCharts in Depth in Excel\nApril 2024\n1.0\n\n\nLookups and Database Functions in Excel\nApril 24, 2024\n2.0\n\n\nPivot Tables in Excel\nApril 16, 2024\n2.0\n\n\nText, Time, and Dates in Excel\nMarch 13, 2024\n2.0\n\n\nFinance Functions in Excel\nMarch 8, 2024\n1.0\n\n\nFormulas and Functions in Excel\nNovember 24, 2022\n3.0\n\n\nData Manipulation and Formatting in Excel\nOctober 24, 2022\n2.0\n\n\n\n\n\n Power BI\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nIntroduction to Visualizations in Power BI\nJune 18, 2024\n2.0\n\n\nBuilding Your First Dashboard in Power BI\nJune 18, 2024\n1.5\n\n\n\n\n\n Python Fundamentals\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nFunctions, Conditionality and Loops in Python Fundamentals\nApril 25, 2024\n2.5\n\n\nPython Fundamentals in Python Fundamentals\nApril 25, 2024\n2.0\n\n\n\n\n\n SQL\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nUnderstanding SQL Databases in SQL\nApril 22, 2024\n1.5\n\n\n\n\n\n Statistical Analysis\n\n\n\n\n\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nProbability Distributions in Statistical Analysis\nApril 25, 2024\n2.0\n\n\nPrinciples of Statistics in Statistical Analysis\nApril 18, 2024\n1.5\n\n\nProbability Principles in Statistical Analysis\nApril 17, 2024\n1.5\n\n\nIntroduction to Predictive Modeling in Statistical Analysis\nApril 16, 2024\n2.0\n\n\n\n\n\n Tableau\n\n\n\nCourse\nDate\nCPD\n\n\n\n\nIntroducing Tableau in Tableau\nApril 12, 2023\n1.5"
-  },
-  {
-    "objectID": "certifications.html#datacamp",
-    "href": "certifications.html#datacamp",
-    "title": "Certifications",
-    "section": "DataCamp",
-    "text": "DataCamp\n\n\n\nCourse\nDate\nLength\n\n\n\n\nIntroduction to NumPy\nNovember 25, 2025\n4 hrs"
+    "objectID": "contact.html#references",
+    "href": "contact.html#references",
+    "title": "Contact",
+    "section": "References",
+    "text": "References\nReferences are available upon request. Please get in touch via email or LinkedIn and I will be happy to provide details.\n\nThis site was built with Quarto and published via GitHub Pages."
   },
   {
     "objectID": "reflection.html",
@@ -287,24 +224,87 @@
     "text": "Looking Forward\nI am graduating in Summer 2026 with a clearer sense of the career I want going forward. I am most energised by work that sits at the intersection of technical analysis and strategic decision-making, using data to answer questions that actually matter to an organisation, and communicating those answers in a way that drives action.\nThe skills I have built during this degree, Python, SQL, Power BI, Power Automate, machine learning, business strategy, and financial modelling, give me a strong foundation. But more than any individual skill, I leave DCU with a way of approaching problems: breaking them down, finding the right framework, building something rigorous, and communicating it clearly."
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
     "section": "",
-    "text": "I am currently in my final year at Dublin City University and actively looking for a graduate role with a focus on data analytics. If you would like to get in touch, please use any of the channels below."
+    "text": "A selection of academic projects completed as part of my Bachelor of Business Studies (Data Analytics) at Dublin City University.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning & Advanced Python\n\n\n\nPython\n\nMachine Learning\n\nData Analytics\n\n\n\nStroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset — including EDA, SMOTE oversampling, and ROC curve analysis.\n\n\n\nApr 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Management — Lyten Case Study\n\n\n\nStrategy\n\nBusiness\n\nAcademic\n\n\n\nA strategic analysis of Lyten’s acquisition of Northvolt assets, examining post-acquisition integration, internationalisation strategy, and geopolitical alignment using core…\n\n\n\nApr 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew Enterprise Development — Mantis\n\n\n\nEntrepreneurship\n\nBusiness Planning\n\nStrategy\n\n\n\nA full business plan for Mantis, an insect-protein ready-to-drink shake targeting the Irish health and wellness market. Developed as part of the BAA1003 New Enterprise…\n\n\n\nApr 1, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "contact.html#get-in-touch",
-    "href": "contact.html#get-in-touch",
-    "title": "Contact",
-    "section": "Get in Touch",
-    "text": "Get in Touch\n\n\n\n Email\nbenquilligan1@gmail.com\n\n\n LinkedIn\nlinkedin.com/in/benquilligan\n\n\n GitHub\ngithub.com/ben-quilligan\n\n\n Location\nDublin, Ireland\n\n\n\n\n\n\n\n\n\nNote CV\n\n\n\nMy full CV is available to download as a PDF.\n Download CV\n\n\n\n\n\n\n\n\nTip Availability\n\n\n\nI am graduating in Summer 2026 and available for graduate roles from that point. I am open to roles in data analytics, business intelligence, and digital transformation."
+    "objectID": "projects/ned.html",
+    "href": "projects/ned.html",
+    "title": "New Enterprise Development — Mantis",
+    "section": "",
+    "text": "Mantis is a 500ml ready-to-drink chocolate protein shake made with Irish UHT milk, cricket powder, and buffalo worm powder. This project involved developing a full business plan for Mantis as part of the BAA1003 New Enterprise Development module at DCU, under the supervision of Dr. Eric Clinton.\nThe plan was developed by a five-person founding team, with me serving as CEO and product development lead.\n\n\n\n\n\n\nNote\n\n\n\nMantis delivers 60 grams of protein per bottle (12g per 100ml) — the highest protein density of any RTD shake currently available on the Irish market. Competitors including Avonmore, GetPro, and MyProtein range from 6 to 9g per 100ml."
   },
   {
-    "objectID": "contact.html#references",
-    "href": "contact.html#references",
-    "title": "Contact",
-    "section": "References",
-    "text": "References\nReferences are available upon request. Please get in touch via email or LinkedIn and I will be happy to provide details.\n\nThis site was built with Quarto and published via GitHub Pages."
+    "objectID": "projects/ned.html#overview",
+    "href": "projects/ned.html#overview",
+    "title": "New Enterprise Development — Mantis",
+    "section": "",
+    "text": "Mantis is a 500ml ready-to-drink chocolate protein shake made with Irish UHT milk, cricket powder, and buffalo worm powder. This project involved developing a full business plan for Mantis as part of the BAA1003 New Enterprise Development module at DCU, under the supervision of Dr. Eric Clinton.\nThe plan was developed by a five-person founding team, with me serving as CEO and product development lead.\n\n\n\n\n\n\nNote\n\n\n\nMantis delivers 60 grams of protein per bottle (12g per 100ml) — the highest protein density of any RTD shake currently available on the Irish market. Competitors including Avonmore, GetPro, and MyProtein range from 6 to 9g per 100ml."
+  },
+  {
+    "objectID": "projects/ned.html#the-product",
+    "href": "projects/ned.html#the-product",
+    "title": "New Enterprise Development — Mantis",
+    "section": "The Product",
+    "text": "The Product\nBoth insect species used in Mantis are fully authorised under EU Novel Food regulations — crickets from February 2022 and buffalo worms from January 2023. The product is UHT shelf-stable, requiring no refrigeration until opened, and retails at €4.00 per bottle.\nThe recipe was developed through 27 iterations over the feasibility study period, with a blind taste test conducted with 26 participants. The final formulation achieved a 54% top-tier rating of 5/5.\n\n\n\nFeature\nDetail\n\n\n\n\nProtein per bottle\n60g (12g/100ml)\n\n\nRetail price\n€4.00\n\n\nWholesale price\n€2.67\n\n\nShelf life\nAmbient (UHT)\n\n\nProtein source\nCricket + buffalo worm powder\n\n\nCO₂ vs whey\n6.5× lower per kg of protein"
+  },
+  {
+    "objectID": "projects/ned.html#market-opportunity",
+    "href": "projects/ned.html#market-opportunity",
+    "title": "New Enterprise Development — Mantis",
+    "section": "Market Opportunity",
+    "text": "Market Opportunity\nThe global protein supplement market is valued at approximately €20 billion, growing at 8–10% per annum. The Irish RTD protein beverage segment has seen 14.3% CAGR (2020–2024). Mantis identified a clear first-mover opportunity — no insect protein RTD drink currently exists in the Irish market.\nPrimary research (n=157 survey responses) confirmed that 77% of respondents would be open to trying an insect-protein drink, with taste and protein content identified as the primary purchase drivers."
+  },
+  {
+    "objectID": "projects/ned.html#financial-projections",
+    "href": "projects/ned.html#financial-projections",
+    "title": "New Enterprise Development — Mantis",
+    "section": "Financial Projections",
+    "text": "Financial Projections\n\n\nShow projection code\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nyears = ['Year 1 (2027)', 'Year 2 (2028)', 'Year 3 (2029)']\nrevenue = [93454, 542558, 2436056]\nnet_profit = [-23752, 73244, 562448]\nunits = [35045, 203459, 913521]\n\nfig, axes = plt.subplots(1, 2, figsize=(12, 5))\n\n# Revenue and profit\nx = np.arange(len(years))\naxes[0].bar(x - 0.2, revenue, 0.4, label='Revenue (€)', color='#2e7dcc', alpha=0.85)\naxes[0].bar(x + 0.2, net_profit, 0.4, label='Net Profit (€)', color='#0d1b2a', alpha=0.85)\naxes[0].set_xticks(x)\naxes[0].set_xticklabels(years)\naxes[0].set_title('Revenue vs Net Profit (€)', fontsize=12)\naxes[0].legend()\naxes[0].yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'€{x:,.0f}'))\n\n# Units sold\naxes[1].plot(years, units, marker='o', color='#2e7dcc', linewidth=2.5)\naxes[1].fill_between(years, units, alpha=0.1, color='#2e7dcc')\naxes[1].set_title('Units Sold by Year', fontsize=12)\naxes[1].yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'{x:,.0f}'))\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\nMetric\nYear 1 (2027)\nYear 2 (2028)\nYear 3 (2029)\n\n\n\n\nSales Revenue\n€93,454\n€542,558\n€2,436,056\n\n\nNet Profit / (Loss)\n(€23,752)\n€73,244\n€562,448\n\n\nUnits Sold\n35,045\n203,459\n913,521\n\n\nGross Margin\n34.6%\n37.8%\n40.9%\n\n\n\nMantis is projected to break even operationally in Year 2, reaching a net profit of €562,448 with revenue of €2,436,056 by Year 3."
+  },
+  {
+    "objectID": "projects/ned.html#go-to-market-strategy",
+    "href": "projects/ned.html#go-to-market-strategy",
+    "title": "New Enterprise Development — Mantis",
+    "section": "Go-to-Market Strategy",
+    "text": "Go-to-Market Strategy\nDistribution in Year 1 targets Holland & Barrett (14 Irish stores), Nourish Health Stores (20 stores), and independent gyms nationwide — placing the product on over 780 shelves. From Year 3, the plan includes expansion into national grocery multiples (Tesco Ireland and Dunnes Stores)."
+  },
+  {
+    "objectID": "projects/ned.html#key-learnings",
+    "href": "projects/ned.html#key-learnings",
+    "title": "New Enterprise Development — Mantis",
+    "section": "Key Learnings",
+    "text": "Key Learnings\nThis project gave me practical experience across the full cycle of new venture development — from product ideation and consumer research through to financial modelling and investor pitch preparation. Taking the role of CEO taught me how to lead a multi-functional team, align competing priorities, and translate strategic goals into operational plans."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I am a final-year Business Studies student at Dublin City University (DCU), specialising in Data Analytics, graduating in Summer 2026. I am tracking for First Class Honours based on my second and current year results.\nI was born and raised in Kildare, and attended two Gaelscoils growing up in Kilcock and Lucan, achieving 566 points in my Leaving Certificate.\nMy interest in data analytics primarily comes from my 3rd year Intra placement in the digital team at PwC. During my 14 months there I had the opportunity to work on several very interesting analytics projects and gained experience with a wide range of tools. Going forward in my career I hope to continue using and devloping these skills working on meaningful projects."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "I am a final-year Business Studies student at Dublin City University (DCU), specialising in Data Analytics, graduating in Summer 2026. I am tracking for First Class Honours based on my second and current year results.\nI was born and raised in Kildare, and attended two Gaelscoils growing up in Kilcock and Lucan, achieving 566 points in my Leaving Certificate.\nMy interest in data analytics primarily comes from my 3rd year Intra placement in the digital team at PwC. During my 14 months there I had the opportunity to work on several very interesting analytics projects and gained experience with a wide range of tools. Going forward in my career I hope to continue using and devloping these skills working on meaningful projects."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\n\nTechnical\n\nPython & NumPy\nSQL\nPower BI & Power Automate\nMicrosoft Excel (advanced)\nDatabricks & Workbench\nSharePoint & Visio\n\n\nProfessional\n\nData Analytics\nStakeholder Communication\nProject Management\nProcess Mapping\nCritical Thinking\nFluent Irish Speaker"
+  },
+  {
+    "objectID": "about.html#goals",
+    "href": "about.html#goals",
+    "title": "About Me",
+    "section": "Goals",
+    "text": "Goals\nI am looking for a graduate role with a focus on data analytics, where I can apply the technical and interpersonal skills developed during my degree and placement at PwC."
   }
 ]
