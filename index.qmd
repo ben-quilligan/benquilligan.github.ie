@@ -2,14 +2,42 @@
 title: "Ben Quilligan"
 image: profilepic.jpg
 about:
-  template: jolla
-  links: # create buttons
+  template: trestles
+  image-shape: round
+  image-width: 200px
+  links:
     - icon: linkedin
-      text: LinkedIn 
+      text: LinkedIn
       href: https://www.linkedin.com/in/benquilligan/
+      target: _blank
+    - icon: envelope
+      text: Email
+      href: mailto:benquilligan1@gmail.com
+    - icon: github
+      text: GitHub
+      href: https://github.com/ben-quilligan
+      target: _blank
+    - text: "{{< fa file-pdf >}} CV"
+      href: cv/BenQuilligan_CV.pdf
+      target: _blank
 ---
 
-This is a Quarto website.
+## Welcome
 
-Test
+I am a final-year Business Studies student at Dublin City University, specialising in Data Analytics. During this course I have developed strong critical thinking and problem-solving skills which I hope to put to use in a future career in analytics.
 
+Here you can learn more about me and some of the projects I have completed throughout the duration of this course.
+
+::: {.callout-note}
+This site is my ePortfolio, showcasing academic projects, certifications, and professional experience built during my degree at DCU.
+:::
+
+## Quick Links
+
+| Section | Description |
+|---|---|
+| [About Me](about.qmd) | Background, skills, and goals |
+| [Projects](projects/index.qmd) | Academic work with Python code |
+| [Certifications](certifications.qmd) | Kubicle and DataCamp credentials |
+| [CV](cv/BenQuilligan_CV.pdf) | Full curriculum vitae (PDF) |
+| [Reflection](reflection.qmd) | What I learned throughout this module |

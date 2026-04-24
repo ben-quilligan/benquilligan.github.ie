@@ -1,7 +1,53 @@
 ---
-title: "About"
-
+title: "About Me"
 ---
 
-About this site
+## Background
+
+I am a final-year Business Studies student at Dublin City University (DCU), specialising in Data Analytics, graduating in Summer 2026. I am tracking for First Class Honours based on my second and current year results.
+
+I grew up in Ballyvaughan, Co. Clare and completed my Leaving Certificate at Coláiste Cois Life in Lucan in 2022, achieving 566 points with 7 Higher Level Honours.
+
+## Professional Experience
+
+### PwC Ireland — Digital Team Co-op *(June 2024 – July 2025)*
+
+During my co-op at PwC I worked within the Digital Team, where I:
+
+- Organised and facilitated over 10 ideation workshops on new technologies including Power Automate and Databricks
+- Designed GenAI adoption workshops in collaboration with the GenAI team for ChatPwC and Copilot
+- Supported the M365 migration from Google Workspace, developing SharePoint sites across the firm
+- Created data visualisation assets in Power BI for the Digital Team and business stakeholders
+- Developed Power Automate assets including automating the partner appraisal and monthly billing processes
+- Created Visio process maps with business analysts in Kolkata to identify inefficiencies in large-scale processes
+- Extended by two months to onboard and train new interns during the Tech Central restructuring
+
+## Skills
+
+::: {.columns}
+::: {.column width="50%"}
+**Technical**
+
+- Python & NumPy
+- SQL
+- Power BI & Power Automate
+- Microsoft Excel (advanced)
+- Databricks & Workbench
+- SharePoint & Visio
+:::
+::: {.column width="50%"}
+**Professional**
+
+- Data Analytics
+- Stakeholder Communication
+- Project Management
+- Process Mapping
+- Critical Thinking
+- Fluent Irish Speaker
+:::
+:::
+
+## Goals
+
+I am looking for a graduate role with a focus on data analytics, where I can apply the technical and interpersonal skills developed during my degree and co-op at PwC.
 
