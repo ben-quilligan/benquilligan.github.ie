@@ -7,6 +7,27 @@
     "text": "I am a final-year Business Studies student at Dublin City University (DCU), specialising in Data Analytics, graduating in Summer 2026. I am tracking for First Class Honours based on my second and current year results.\nI was born and raised in Kildare, and attended two Gaelscoils growing up in Kilcock and Lucan, achieving 566 points in my Leaving Certificate.\nMy interest in data analytics primarily comes from my 3rd year Intra placement in the digital team at PwC. During my 14 months there I had the opportunity to work on several very interesting analytics projects and gained experience with a wide range of tools. Going forward in my career I hope to continue using and devloping these skills working on meaningful projects."
   },
   {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "I am a final-year Business Studies student at Dublin City University (DCU), specialising in Data Analytics, graduating in Summer 2026. I am tracking for First Class Honours based on my second and current year results.\nI was born and raised in Kildare, and attended two Gaelscoils growing up in Kilcock and Lucan, achieving 566 points in my Leaving Certificate.\nMy interest in data analytics primarily comes from my 3rd year Intra placement in the digital team at PwC. During my 14 months there I had the opportunity to work on several very interesting analytics projects and gained experience with a wide range of tools. Going forward in my career I hope to continue using and devloping these skills working on meaningful projects."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\n\nTechnical\n\nPython & NumPy\nSQL\nPower BI & Power Automate\nMicrosoft Excel (advanced)\nDatabricks & Workbench\nSharePoint & Visio\n\n\nProfessional\n\nData Analytics\nStakeholder Communication\nProject Management\nProcess Mapping\nCritical Thinking\nFluent Irish Speaker"
+  },
+  {
+    "objectID": "about.html#goals",
+    "href": "about.html#goals",
+    "title": "About Me",
+    "section": "Goals",
+    "text": "Goals\nI am looking for a graduate role with a focus on data analytics, where I can apply the technical and interpersonal skills developed during my degree and placement at PwC."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Ben Quilligan",
@@ -26,33 +47,5 @@
     "title": "Ben Quilligan",
     "section": "Quick Links",
     "text": "Quick Links\n\n\n\nSection\nDescription\n\n\n\n\nAbout Me\nBackground, skills, and goals\n\n\nProjects\nAcademic work with Python code\n\n\nCertifications\nKubicle and DataCamp credentials\n\n\nCV\nFull curriculum vitae (PDF)\n\n\nReflection\nWhat I learned throughout this module"
-  },
-  {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About Me",
-    "section": "",
-    "text": "I am a final-year Business Studies student at Dublin City University (DCU), specialising in Data Analytics, graduating in Summer 2026. I am tracking for First Class Honours based on my second and current year results.\nI was born and raised in Kildare, and attended two Gaelscoils growing up in Kilcock and Lucan, achieving 566 points in my Leaving Certificate.\nMy interest in data analytics primarily comes from my 3rd year Intra placement in the digital team at PwC. During my 14 months there I had the opportunity to work on several very interesting analytics projects and gained experience with a wide range of tools. Going forward in my career I hope to continue using and devloping these skills working on meaningful projects."
-  },
-  {
-    "objectID": "about.html#professional-experience",
-    "href": "about.html#professional-experience",
-    "title": "About Me",
-    "section": "Professional Experience",
-    "text": "Professional Experience\n\nPwC Ireland — Digital Team Co-op (June 2024 – July 2025)\nDuring my co-op at PwC I worked within the Digital Team, where I:\n\nOrganised and facilitated over 10 ideation workshops on new technologies including Power Automate and Databricks\nDesigned GenAI adoption workshops in collaboration with the GenAI team for ChatPwC and Copilot\nSupported the M365 migration from Google Workspace, developing SharePoint sites across the firm\nCreated data visualisation assets in Power BI for the Digital Team and business stakeholders\nDeveloped Power Automate assets including automating the partner appraisal and monthly billing processes\nCreated Visio process maps with business analysts in Kolkata to identify inefficiencies in large-scale processes\nExtended by two months to onboard and train new interns during the Tech Central restructuring"
-  },
-  {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About Me",
-    "section": "Skills",
-    "text": "Skills\n\n\nTechnical\n\nPython & NumPy\nSQL\nPower BI & Power Automate\nMicrosoft Excel (advanced)\nDatabricks & Workbench\nSharePoint & Visio\n\n\nProfessional\n\nData Analytics\nStakeholder Communication\nProject Management\nProcess Mapping\nCritical Thinking\nFluent Irish Speaker"
-  },
-  {
-    "objectID": "about.html#goals",
-    "href": "about.html#goals",
-    "title": "About Me",
-    "section": "Goals",
-    "text": "Goals\nI am looking for a graduate role with a focus on data analytics, where I can apply the technical and interpersonal skills developed during my degree and placement at PwC."
   }
 ]
