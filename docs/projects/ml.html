@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-04-25">
+<meta name="dcterms.date" content="2026-04-25">
 <meta name="description" content="Stroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset — including EDA, SMOTE oversampling, and ROC curve analysis.">
 
 <title>Machine Learning &amp; Advanced Python – Ben Quilligan</title>
@@ -141,7 +141,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../certifications.qmd"> 
+    <a class="nav-link" href="../certifications.html"> 
 <span class="menu-text">Certifications</span></a>
   </li>  
   <li class="nav-item">
@@ -201,7 +201,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 25, 2024</p>
+      <p class="date">April 25, 2026</p>
     </div>
   </div>
   
@@ -268,7 +268,7 @@ Note
 <section id="exploratory-data-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="exploratory-data-analysis">1. Exploratory Data Analysis</h3>
 <p>The dataset was first examined for structure, missing values, and class imbalance. BMI had 201 missing values, which were imputed using the median. A single record with gender “Other” was removed.</p>
-<div id="e805475f" class="cell" data-execution_count="1">
+<div id="36b7b1b5" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show EDA code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -290,7 +290,7 @@ Note
 </section>
 <section id="preprocessing" class="level3">
 <h3 class="anchored" data-anchor-id="preprocessing">2. Preprocessing</h3>
-<div id="ea4e7dad" class="cell" data-execution_count="2">
+<div id="f6ac4b13" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Show preprocessing code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
@@ -330,7 +330,7 @@ Note
 <section id="model-training" class="level3">
 <h3 class="anchored" data-anchor-id="model-training">3. Model Training</h3>
 <p>Three classifiers were trained and compared:</p>
-<div id="41aa21dc" class="cell" data-execution_count="3">
+<div id="30713a1e" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Show model training code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
