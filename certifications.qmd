@@ -1,0 +1,226 @@
+---
+title: "Certifications"
+---
+
+I have completed over 30 courses across two platforms — Kubicle and DataCamp — covering data analytics, Python, Power BI, Excel, SQL, and more. All Kubicle certificates are CPD Approved by Chartered Accountants Ireland.
+
+## Summary
+
+| | |
+|---|---|
+| **Total courses completed** | 30+ |
+| **Platforms** | Kubicle, DataCamp |
+| **CPD credits earned** | 45+ |
+| **Accreditation** | Chartered Accountants Ireland (CPD Approved) |
+
+## Featured Certificates
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.callout-note icon=false}
+## {{< fa brain >}} Predicting Future Values in AI Fundamentals
+**Issuer:** Kubicle · **Date:** April 25, 2024 · **Credits:** 1.0 CPD
+
+[{{< fa file-pdf >}} View Certificate](aicertificate.pdf){target="_blank" .btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.callout-note icon=false}
+## {{< fa code >}} Functions, Conditionality and Loops in Python Fundamentals
+**Issuer:** Kubicle · **Date:** April 25, 2024 · **Credits:** 2.5 CPD
+
+[{{< fa file-pdf >}} View Certificate](pythoncertificate.pdf){target="_blank" .btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.callout-note icon=false}
+## {{< fa chart-bar >}} Introduction to Visualizations in Power BI
+**Issuer:** Kubicle · **Date:** June 18, 2024 · **Credits:** 2.0 CPD
+
+[{{< fa file-pdf >}} View Certificate](powerbicertificate.pdf){target="_blank" .btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.callout-note icon=false}
+## {{< fa table >}} Finance Functions in Excel
+**Issuer:** Kubicle · **Date:** March 8, 2024 · **Credits:** 1.0 CPD
+
+[{{< fa file-pdf >}} View Certificate](financecertificate.pdf){target="_blank" .btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.callout-note icon=false}
+## {{< fa python >}} Introduction to NumPy
+**Issuer:** DataCamp · **Date:** November 25, 2025 · **Length:** 4 hrs
+
+[{{< fa file-pdf >}} View Certificate](datacampcertificate.pdf){target="_blank" .btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+:::
+
+## All Kubicle Courses
+
+```{python}
+#| echo: false
+#| eval: false
+
+# This code documents the full list of Kubicle course completions
+# organised by subject area
+
+courses = {
+    "AI Fundamentals": [
+        ("Predicting Future Values in AI Fundamentals", "April 25, 2024", 1.0),
+        ("Business Applications of AI in AI Fundamentals", "April 21, 2024", 1.0),
+        ("Introduction to Artificial Intelligence in AI Fundamentals", "April 21, 2024", 1.0),
+    ],
+    "Data Ethics & Risk": [
+        ("Introduction to Data Ethics in Data Ethics & Risk", "April 3, 2024", 1.0),
+    ],
+    "Data Literacy": [
+        ("Planning a Data Driven Project in Data Literacy", "April 14, 2024", 1.0),
+        ("Thinking and Communicating with Data in Data Literacy", "March 27, 2024", 1.5),
+        ("Introduction to Data Preparation in Data Literacy", "March 14, 2024", 1.0),
+        ("Introduction to Data and Databases in Data Literacy", "March 7, 2024", 1.0),
+    ],
+    "Data Presentation Skills": [
+        ("Telling Stories with Data in Data Presentation Skills", "April 22, 2024", 1.0),
+        ("Presenting Your Data in Data Presentation Skills", "April 20, 2024", 1.0),
+        ("Communicating Data Effectively in Data Presentation Skills", "March 16, 2024", 1.0),
+    ],
+    "Data Security": [
+        ("Handling Data Securely and Responsibly in Data Security", "April 22, 2026", 1.5),
+        ("Keeping Your Information Safe in Data Security", "April 22, 2026", 1.0),
+    ],
+    "Excel": [
+        ("Charts in Depth in Excel", "April 2024", 1.0),
+        ("Lookups and Database Functions in Excel", "April 24, 2024", 2.0),
+        ("Pivot Tables in Excel", "April 16, 2024", 2.0),
+        ("Text, Time, and Dates in Excel", "March 13, 2024", 2.0),
+        ("Finance Functions in Excel", "March 8, 2024", 1.0),
+        ("Formulas and Functions in Excel", "November 24, 2022", 3.0),
+        ("Data Manipulation and Formatting in Excel", "October 24, 2022", 2.0),
+    ],
+    "Power BI": [
+        ("Introduction to Visualizations in Power BI", "June 18, 2024", 2.0),
+        ("Building Your First Dashboard in Power BI", "June 18, 2024", 1.5),
+    ],
+    "Python Fundamentals": [
+        ("Functions, Conditionality and Loops in Python Fundamentals", "April 25, 2024", 2.5),
+        ("Python Fundamentals in Python Fundamentals", "April 25, 2024", 2.0),
+    ],
+    "SQL": [
+        ("Understanding SQL Databases in SQL", "April 22, 2024", 1.5),
+    ],
+    "Statistical Analysis": [
+        ("Probability Distributions in Statistical Analysis", "April 25, 2024", 2.0),
+        ("Principles of Statistics in Statistical Analysis", "April 18, 2024", 1.5),
+        ("Probability Principles in Statistical Analysis", "April 17, 2024", 1.5),
+        ("Introduction to Predictive Modeling in Statistical Analysis", "April 16, 2024", 2.0),
+    ],
+    "Tableau": [
+        ("Introducing Tableau in Tableau", "April 12, 2023", 1.5),
+    ],
+}
+
+total_courses = sum(len(v) for v in courses.values())
+total_credits = sum(c for v in courses.values() for _, _, c in v)
+print(f"Total courses: {total_courses}")
+print(f"Total CPD credits: {total_credits}")
+```
+
+### {{< fa brain >}} AI Fundamentals
+
+| Course | Date | CPD |
+|---|---|---|
+| Predicting Future Values in AI Fundamentals | April 25, 2024 | 1.0 |
+| Business Applications of AI in AI Fundamentals | April 21, 2024 | 1.0 |
+| Introduction to Artificial Intelligence in AI Fundamentals | April 21, 2024 | 1.0 |
+
+### {{< fa scale-balanced >}} Data Ethics & Risk
+
+| Course | Date | CPD |
+|---|---|---|
+| Introduction to Data Ethics in Data Ethics & Risk | April 3, 2024 | 1.0 |
+
+### {{< fa database >}} Data Literacy
+
+| Course | Date | CPD |
+|---|---|---|
+| Planning a Data Driven Project in Data Literacy | April 14, 2024 | 1.0 |
+| Thinking and Communicating with Data in Data Literacy | March 27, 2024 | 1.5 |
+| Introduction to Data Preparation in Data Literacy | March 14, 2024 | 1.0 |
+| Introduction to Data and Databases in Data Literacy | March 7, 2024 | 1.0 |
+
+### {{< fa chart-line >}} Data Presentation Skills
+
+| Course | Date | CPD |
+|---|---|---|
+| Telling Stories with Data in Data Presentation Skills | April 22, 2024 | 1.0 |
+| Presenting Your Data in Data Presentation Skills | April 20, 2024 | 1.0 |
+| Communicating Data Effectively in Data Presentation Skills | March 16, 2024 | 1.0 |
+
+### {{< fa lock >}} Data Security
+
+| Course | Date | CPD |
+|---|---|---|
+| Handling Data Securely and Responsibly in Data Security | April 22, 2026 | 1.5 |
+| Keeping Your Information Safe in Data Security | April 22, 2026 | 1.0 |
+
+### {{< fa file-excel >}} Excel
+
+| Course | Date | CPD |
+|---|---|---|
+| Charts in Depth in Excel | April 2024 | 1.0 |
+| Lookups and Database Functions in Excel | April 24, 2024 | 2.0 |
+| Pivot Tables in Excel | April 16, 2024 | 2.0 |
+| Text, Time, and Dates in Excel | March 13, 2024 | 2.0 |
+| Finance Functions in Excel | March 8, 2024 | 1.0 |
+| Formulas and Functions in Excel | November 24, 2022 | 3.0 |
+| Data Manipulation and Formatting in Excel | October 24, 2022 | 2.0 |
+
+### {{< fa chart-bar >}} Power BI
+
+| Course | Date | CPD |
+|---|---|---|
+| Introduction to Visualizations in Power BI | June 18, 2024 | 2.0 |
+| Building Your First Dashboard in Power BI | June 18, 2024 | 1.5 |
+
+### {{< fa code >}} Python Fundamentals
+
+| Course | Date | CPD |
+|---|---|---|
+| Functions, Conditionality and Loops in Python Fundamentals | April 25, 2024 | 2.5 |
+| Python Fundamentals in Python Fundamentals | April 25, 2024 | 2.0 |
+
+### {{< fa server >}} SQL
+
+| Course | Date | CPD |
+|---|---|---|
+| Understanding SQL Databases in SQL | April 22, 2024 | 1.5 |
+
+### {{< fa chart-pie >}} Statistical Analysis
+
+| Course | Date | CPD |
+|---|---|---|
+| Probability Distributions in Statistical Analysis | April 25, 2024 | 2.0 |
+| Principles of Statistics in Statistical Analysis | April 18, 2024 | 1.5 |
+| Probability Principles in Statistical Analysis | April 17, 2024 | 1.5 |
+| Introduction to Predictive Modeling in Statistical Analysis | April 16, 2024 | 2.0 |
+
+### {{< fa table-columns >}} Tableau
+
+| Course | Date | CPD |
+|---|---|---|
+| Introducing Tableau in Tableau | April 12, 2023 | 1.5 |
+
+## DataCamp
+
+| Course | Date | Length |
+|---|---|---|
+| Introduction to NumPy | November 25, 2025 | 4 hrs |
