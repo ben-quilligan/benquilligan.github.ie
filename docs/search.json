@@ -56,116 +56,60 @@
     "text": "Quick Links\n\n\n\nSection\nDescription\n\n\n\n\nAbout Me\nBackground, skills, and goals\n\n\nProjects\nAcademic work with Python code\n\n\nCertifications\nKubicle and DataCamp credentials\n\n\nCV\nFull curriculum vitae (PDF)\n\n\nReflection\nWhat I learned throughout this module"
   },
   {
-    "objectID": "projects/ml.html",
-    "href": "projects/ml.html",
-    "title": "Machine Learning & Advanced Python",
-    "section": "",
-    "text": "This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset, approximately 20:1 in favour of non-stroke cases, and producing models that could maximise recall of true stroke cases without sacrificing overall performance.\n\n\n\n\n\n\nNote\n\n\n\nDataset: Stroke Prediction Dataset: 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type."
-  },
-  {
-    "objectID": "projects/ml.html#overview",
-    "href": "projects/ml.html#overview",
-    "title": "Machine Learning & Advanced Python",
-    "section": "",
-    "text": "This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset, approximately 20:1 in favour of non-stroke cases, and producing models that could maximise recall of true stroke cases without sacrificing overall performance.\n\n\n\n\n\n\nNote\n\n\n\nDataset: Stroke Prediction Dataset: 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type."
-  },
-  {
-    "objectID": "projects/ml.html#tools-libraries",
-    "href": "projects/ml.html#tools-libraries",
-    "title": "Machine Learning & Advanced Python",
-    "section": "Tools & Libraries",
-    "text": "Tools & Libraries\n\n\n\nLibrary\nPurpose\n\n\n\n\npandas / numpy\nData manipulation and preprocessing\n\n\nscikit-learn\nModel training, evaluation, GridSearchCV\n\n\nimbalanced-learn\nSMOTE oversampling\n\n\nxgboost\nXGBoost classifier\n\n\nseaborn / matplotlib\nData visualisation"
-  },
-  {
-    "objectID": "projects/ml.html#methodology",
-    "href": "projects/ml.html#methodology",
-    "title": "Machine Learning & Advanced Python",
-    "section": "Methodology",
-    "text": "Methodology\n\n1. Exploratory Data Analysis\nThe dataset was first examined for structure, missing values, and class imbalance. BMI had 201 missing values, which were imputed using the median. A single record with gender “Other” was removed.\n\n\nShow EDA code\nimport pandas as pd\nimport numpy as np\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Load and inspect the dataset\nfile = '/content/strokedataset.csv'\ndata = pd.read_csv(file)\n\nprint(\"Dataset shape:\", data.shape)\nprint(\"\\nMissing values:\\n\", data.isna().sum())\nprint(\"\\nClass distribution:\\n\", data['stroke'].value_counts())\nprint(f\"\\nClass imbalance ratio: {data['stroke'].value_counts()[0] / data['stroke'].value_counts()[1]:.1f}:1\")\n\n\nThe dataset was significantly imbalanced, with only 4.87% of cases being positive stroke events, a common challenge in medical datasets that requires careful handling to avoid models that simply predict “no stroke” for every patient.\n\n\n2. Preprocessing\n\n\nShow preprocessing code\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.preprocessing import LabelEncoder, StandardScaler\nfrom imblearn.over_sampling import SMOTE\n\n# Impute missing BMI with median\ndata['bmi'] = pd.to_numeric(data['bmi'], errors='coerce')\ndata['bmi'] = data['bmi'].fillna(data['bmi'].median())\n\n# Drop ID and remove 'Other' gender\ndata.drop(columns=['id'], inplace=True)\ndata = data[data['gender'] != 'Other']\n\n# Encode categorical variables\nle = LabelEncoder()\nfor col in ['gender', 'ever_married', 'work_type', 'Residence_type', 'smoking_status']:\n    data[col] = le.fit_transform(data[col])\n\n# Split, scale, and apply SMOTE\nX = data.drop('stroke', axis=1)\ny = data['stroke']\n\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, stratify=y, random_state=42)\n\nscaler = StandardScaler()\nX_train_sc = scaler.fit_transform(X_train)\nX_test_sc = scaler.transform(X_test)\n\nsmote = SMOTE(sampling_strategy=0.3, k_neighbors=5, random_state=42)\nX_train_sm, y_train_sm = smote.fit_resample(X_train_sc, y_train)\n\n\nSMOTE (Synthetic Minority Over-sampling Technique) was applied with a sampling strategy of 0.3, generating synthetic stroke cases to reduce the class imbalance in the training set without duplicating existing records.\n\n\n3. Model Training\nThree classifiers were trained and compared:\n\n\nShow model training code\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.model_selection import GridSearchCV\nfrom xgboost import XGBClassifier\n\n# Logistic Regression\nlog_reg = LogisticRegression(max_iter=1000, class_weight='balanced', random_state=42)\nlog_reg.fit(X_train_sm, y_train_sm)\n\n# Random Forest with GridSearchCV\nparam_grid_rf = {\n    'n_estimators': [100, 200],\n    'max_depth': [4, 6, None],\n    'min_samples_leaf': [2, 5],\n    'class_weight': ['balanced']\n}\ngrid_rf = GridSearchCV(\n    RandomForestClassifier(random_state=42),\n    param_grid_rf, scoring='roc_auc', cv=5, n_jobs=-1)\ngrid_rf.fit(X_train_sm, y_train_sm)\nbest_rf = grid_rf.best_estimator_\n\n# XGBoost\nxgb = XGBClassifier(\n    scale_pos_weight=10, max_depth=4, learning_rate=0.05,\n    n_estimators=200, min_child_weight=3, gamma=0.2,\n    subsample=0.8, colsample_bytree=0.8,\n    eval_metric='logloss', random_state=42, verbosity=0)\nxgb.fit(X_train_sm, y_train_sm)"
-  },
-  {
-    "objectID": "projects/ml.html#results",
-    "href": "projects/ml.html#results",
-    "title": "Machine Learning & Advanced Python",
-    "section": "Results",
-    "text": "Results\n\n\n\nModel\nAccuracy\nPrecision\nRecall\nF1-Score\nROC-AUC\n\n\n\n\nLogistic Regression\n0.7423\n0.1891\n0.7143\n0.2993\n0.7912\n\n\nRandom Forest\n0.9141\n0.3448\n0.2857\n0.3125\n0.8203\n\n\nXGBoost\n0.8200\n0.2174\n0.5714\n0.3143\n0.7834\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nKey finding: Random Forest achieved the highest ROC-AUC (0.82), making it the strongest overall performer. For a medical screening context where missing a stroke is more costly than a false alarm, Logistic Regression’s higher recall (0.71) may be preferable despite lower precision."
-  },
-  {
-    "objectID": "projects/ml.html#key-learnings",
-    "href": "projects/ml.html#key-learnings",
-    "title": "Machine Learning & Advanced Python",
-    "section": "Key Learnings",
-    "text": "Key Learnings\nWorking with this project reinforced the importance of understanding the business context behind model selection. In healthcare, recall often matters more than accuracy. It also highlighted the practical challenges of class imbalance and the value of techniques like SMOTE and class_weight='balanced' in producing fair models on skewed data.\n\n\n\n\n\n\n\nNote Full Project Report\n\n\n\nView or download the complete project report including all code, visualisations, and analysis.\n Download Full Report"
-  },
-  {
-    "objectID": "projects/pm.html",
-    "href": "projects/pm.html",
-    "title": "Project Management — Lyten Case Study",
+    "objectID": "projects/bs.html",
+    "href": "projects/bs.html",
+    "title": "Business Strategy — Lyten Case Study",
     "section": "",
     "text": "This project is a case study analysis of Lyten, a US-based lithium-sulphur battery startup that acquired key assets from the bankrupt Swedish manufacturer Northvolt. The analysis was completed as part of the BAA1019 Business Strategy module at DCU.\nThe case study was structured around three questions examining strategic issues, internationalisation theory, and geopolitical alignment."
   },
   {
-    "objectID": "projects/pm.html#overview",
-    "href": "projects/pm.html#overview",
-    "title": "Project Management — Lyten Case Study",
+    "objectID": "projects/bs.html#overview",
+    "href": "projects/bs.html#overview",
+    "title": "Business Strategy — Lyten Case Study",
     "section": "",
     "text": "This project is a case study analysis of Lyten, a US-based lithium-sulphur battery startup that acquired key assets from the bankrupt Swedish manufacturer Northvolt. The analysis was completed as part of the BAA1019 Business Strategy module at DCU.\nThe case study was structured around three questions examining strategic issues, internationalisation theory, and geopolitical alignment."
   },
   {
-    "objectID": "projects/pm.html#q1-strategic-issues-facing-lyten",
-    "href": "projects/pm.html#q1-strategic-issues-facing-lyten",
-    "title": "Project Management — Lyten Case Study",
+    "objectID": "projects/bs.html#q1-strategic-issues-facing-lyten",
+    "href": "projects/bs.html#q1-strategic-issues-facing-lyten",
+    "title": "Business Strategy — Lyten Case Study",
     "section": "Q1 — Strategic Issues Facing Lyten",
     "text": "Q1 — Strategic Issues Facing Lyten\nLyten’s acquisition presents several interconnected strategic challenges that will shape its long-term trajectory.\n\n\n\n\n\n\nNote\n\n\n\nStrategic issues in context: Critical decisions and challenges that influence a firm’s long-term direction, competitive advantage, and ability to create value (Johnson et al., 2017).\n\n\nPost-acquisition integration is the most immediate challenge. Research suggests that many mergers fail due to cultural clashes, poor coordination, and difficulties in aligning processes (Zollo & Singh, 2004). The urgency of the Northvolt sale may have limited Lyten’s ability to conduct thorough due diligence.\nTechnology strategy presents a tension between Lyten’s core lithium-sulphur specialism and the lithium-ion production inherited from Northvolt. According to innovation strategy literature, firms must carefully balance exploration of new technologies with exploitation of existing capabilities (March, 1991).\nScope and market focus risks overextension across EVs, drones, and data centres simultaneously, a pattern that contributed to Northvolt’s own failure.\nInternational expansion at pace, while simultaneously integrating complex assets, runs counter to the Uppsala model of gradual internationalisation (Johanson & Vahlne, 2009).\nInstitutional dependency on government support in Sweden, Germany, and potentially Canada creates strategic constraints alongside its benefits."
   },
   {
-    "objectID": "projects/pm.html#q2-internationalisation-strategy-assessment",
-    "href": "projects/pm.html#q2-internationalisation-strategy-assessment",
-    "title": "Project Management — Lyten Case Study",
+    "objectID": "projects/bs.html#q2-internationalisation-strategy-assessment",
+    "href": "projects/bs.html#q2-internationalisation-strategy-assessment",
+    "title": "Business Strategy — Lyten Case Study",
     "section": "Q2 — Internationalisation Strategy Assessment",
     "text": "Q2 — Internationalisation Strategy Assessment\n\n\nShow strategic framework visualisation\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Uppsala model: gradual vs rapid expansion comparison\nstages = ['Operational\\nStabilisation', 'Regional\\nConsolidation',\n          'Sequential\\nExpansion', 'Global\\nScale']\nrecommended = [1, 2, 3, 4]\nlyten_current = [0.3, 3.8, 4.0, 3.5]\n\nx = np.arange(len(stages))\nfig, ax = plt.subplots(figsize=(10, 5))\nax.plot(x, recommended, marker='o', label='Uppsala recommended path',\n        color='#2e7dcc', linewidth=2.5)\nax.plot(x, lyten_current, marker='s', label=\"Lyten's current approach\",\n        color='#d94701', linewidth=2.5, linestyle='--')\nax.set_xticks(x)\nax.set_xticklabels(stages)\nax.set_ylabel('Intensity of activity')\nax.set_title(\"Lyten's Internationalisation vs Uppsala Model\", fontsize=12)\nax.legend()\nax.set_ylim(0, 5)\nplt.tight_layout()\nplt.show()\n\n\nLyten’s expansion demonstrates features of strategic asset-seeking, by acquiring Northvolt’s European facilities to access industrial infrastructure and skilled labour (Dunning, 1988). However, the pace of expansion is inconsistent with incremental internationalisation theory.\nResearch on premature scaling highlights that firms expanding too quickly without stable operational foundations face significant performance challenges (Reuber et al., 2021). Lyten is simultaneously integrating distressed assets, developing new battery technologies, and expanding into multiple geographic markets.\nRecommended approach: A regional hub model, prioritising European stabilisation before North American commitment, with staged geographic expansion aligned to operational readiness."
   },
   {
-    "objectID": "projects/pm.html#q3-geopolitical-alignment-barrier-or-constraint",
-    "href": "projects/pm.html#q3-geopolitical-alignment-barrier-or-constraint",
-    "title": "Project Management — Lyten Case Study",
+    "objectID": "projects/bs.html#q3-geopolitical-alignment-barrier-or-constraint",
+    "href": "projects/bs.html#q3-geopolitical-alignment-barrier-or-constraint",
+    "title": "Business Strategy — Lyten Case Study",
     "section": "Q3 — Geopolitical Alignment: Barrier or Constraint?",
     "text": "Q3 — Geopolitical Alignment: Barrier or Constraint?\nLyten’s emphasis on local supply chains and government alignment can be evaluated through two lenses:\n\n\n\n\n\n\n\nPerspective\nAssessment\n\n\n\n\nBarrier to entry\nState-backed incentives and regulatory approvals favour embedded firms (Porter, 2008)\n\n\nInstitutional resource\nGovernment alignment provides legitimacy and access to funding (Peng et al., 2009)\n\n\nStrategic constraint\nOver-dependence reduces flexibility and exposes firm to policy risk\n\n\nLong-term vulnerability\nSubsidies can be withdrawn; political priorities shift\n\n\n\nThe key trade-off is between leveraging institutional support for short-term competitive advantage and maintaining the strategic independence required to respond to market changes. Lyten should diversify its sources of support and ensure commercial logic, not political alignment, drives investment decisions."
   },
   {
-    "objectID": "projects/pm.html#frameworks-applied",
-    "href": "projects/pm.html#frameworks-applied",
-    "title": "Project Management — Lyten Case Study",
+    "objectID": "projects/bs.html#frameworks-applied",
+    "href": "projects/bs.html#frameworks-applied",
+    "title": "Business Strategy — Lyten Case Study",
     "section": "Frameworks Applied",
     "text": "Frameworks Applied\n\nUppsala Internationalisation Model (Johanson & Vahlne, 2009)\nResource-Based View (Barney, 1991)\nPorter’s Five Forces (Porter, 2008)\nInstitutional Theory (Peng et al., 2009)\nExploration/Exploitation Framework (March, 1991)"
   },
   {
-    "objectID": "projects/pm.html#key-learnings",
-    "href": "projects/pm.html#key-learnings",
-    "title": "Project Management — Lyten Case Study",
+    "objectID": "projects/bs.html#key-learnings",
+    "href": "projects/bs.html#key-learnings",
+    "title": "Business Strategy — Lyten Case Study",
     "section": "Key Learnings",
-    "text": "Key Learnings\nThis project deepened my ability to apply theoretical frameworks to real strategic situations. Analysing Lyten’s position required balancing multiple competing perspectives, mirroring the complexity of real strategic decision-making, and reinforced the value of structured frameworks in cutting through ambiguous, multi-faceted problems."
+    "text": "Key Learnings\nThis project deepened my ability to apply theoretical frameworks to real strategic situations. Analysing Lyten’s position required balancing multiple competing perspectives, mirroring the complexity of real strategic decision-making, and reinforced the value of structured frameworks in cutting through ambiguous, multi-faceted problems.\n\n\n\n\n\n\n\nNote Full Case Study\n\n\n\nView or download the complete case study submitted for BAA1019 Business Strategy.\n Download Case Study"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
     "section": "",
-    "text": "I am currently in my final year at Dublin City University and actively looking for a graduate role with a focus on data analytics. If you would like to get in touch, please use any of the channels below."
-  },
-  {
-    "objectID": "contact.html#get-in-touch",
-    "href": "contact.html#get-in-touch",
-    "title": "Contact",
-    "section": "Get in Touch",
-    "text": "Get in Touch\n\n\n\n Email\nbenquilligan1@gmail.com\n\n\n LinkedIn\nlinkedin.com/in/benquilligan\n\n\n GitHub\ngithub.com/ben-quilligan\n\n\n Location\nDublin, Ireland\n\n\n\n\n\n\n\n\n\nNote CV\n\n\n\nMy full CV is available to download as a PDF.\n Download CV\n\n\n\n\n\n\n\n\nTip Availability\n\n\n\nI am graduating in Summer 2026 and available for graduate roles from that point. I am open to roles in data analytics, business intelligence, and digital transformation."
-  },
-  {
-    "objectID": "contact.html#references",
-    "href": "contact.html#references",
-    "title": "Contact",
-    "section": "References",
-    "text": "References\nReferences are available upon request. Please get in touch via email or LinkedIn and I will be happy to provide details.\n\nThis site was built with Quarto and published via GitHub Pages."
+    "text": "A selection of academic projects completed as part of my Bachelor of Business Studies (Data Analytics) at Dublin City University.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning & Advanced Python\n\n\n\nPython\n\nMachine Learning\n\nData Analytics\n\n\n\nStroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset, including EDA, SMOTE oversampling, and ROC curve analysis.\n\n\n\nApr 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nBusiness Strategy — Lyten Case Study\n\n\n\nStrategy\n\nBusiness\n\nAcademic\n\n\n\nA strategic analysis of Lyten’s acquisition of Northvolt assets, examining post-acquisition integration, internationalisation strategy, and geopolitical alignment using core…\n\n\n\nApr 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Management — Harvest City Case Study\n\n\n\nProject Management\n\nStrategy\n\nAcademic\n\n\n\nA critical analysis of the failure of an IoT-based intelligent procurement system at the Harvest City Convention Complex, examining governance, scope management, stakeholder…\n\n\n\nApr 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew Enterprise Development — Mantis\n\n\n\nEntrepreneurship\n\nBusiness Planning\n\nStrategy\n\n\n\nA full business plan for Mantis, an insect-protein ready-to-drink shake targeting the Irish health and wellness market. Developed as part of the BAA1003 New Enterprise…\n\n\n\nApr 1, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "reflection.html",
@@ -224,11 +168,109 @@
     "text": "Looking Forward\nI am graduating in Summer 2026 with a clearer sense of the career I want going forward. I am most energised by work that sits at the intersection of technical analysis and strategic decision-making, using data to answer questions that actually matter to an organisation, and communicating those answers in a way that drives action.\nThe skills I have built during this degree, Python, SQL, Power BI, Power Automate, machine learning, business strategy, and financial modelling, give me a strong foundation. But more than any individual skill, I leave DCU with a way of approaching problems: breaking them down, finding the right framework, building something rigorous, and communicating it clearly."
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "A selection of academic projects completed as part of my Bachelor of Business Studies (Data Analytics) at Dublin City University.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning & Advanced Python\n\n\n\nPython\n\nMachine Learning\n\nData Analytics\n\n\n\nStroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset, including EDA, SMOTE oversampling, and ROC curve analysis.\n\n\n\nApr 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Management — Lyten Case Study\n\n\n\nStrategy\n\nBusiness\n\nAcademic\n\n\n\nA strategic analysis of Lyten’s acquisition of Northvolt assets, examining post-acquisition integration, internationalisation strategy, and geopolitical alignment using core…\n\n\n\nApr 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew Enterprise Development — Mantis\n\n\n\nEntrepreneurship\n\nBusiness Planning\n\nStrategy\n\n\n\nA full business plan for Mantis, an insect-protein ready-to-drink shake targeting the Irish health and wellness market. Developed as part of the BAA1003 New Enterprise…\n\n\n\nApr 1, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "I am currently in my final year at Dublin City University and actively looking for a graduate role with a focus on data analytics. If you would like to get in touch, please use any of the channels below."
+  },
+  {
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Contact",
+    "section": "Get in Touch",
+    "text": "Get in Touch\n\n\n\n Email\nbenquilligan1@gmail.com\n\n\n LinkedIn\nlinkedin.com/in/benquilligan\n\n\n GitHub\ngithub.com/ben-quilligan\n\n\n Location\nDublin, Ireland\n\n\n\n\n\n\n\n\n\nNote CV\n\n\n\nMy full CV is available to download as a PDF.\n Download CV\n\n\n\n\n\n\n\n\nTip Availability\n\n\n\nI am graduating in Summer 2026 and available for graduate roles from that point. I am open to roles in data analytics, business intelligence, and digital transformation."
+  },
+  {
+    "objectID": "contact.html#references",
+    "href": "contact.html#references",
+    "title": "Contact",
+    "section": "References",
+    "text": "References\nReferences are available upon request. Please get in touch via email or LinkedIn and I will be happy to provide details.\n\nThis site was built with Quarto and published via GitHub Pages."
+  },
+  {
+    "objectID": "projects/pm.html",
+    "href": "projects/pm.html",
+    "title": "Project Management — Harvest City Case Study",
+    "section": "",
+    "text": "This project is a critical analysis of the failure of an intelligent procurement system developed for the Harvest City Convention Complex. The system was an ambitious IoT-based solution intended to automate procurement across multiple tenants, but ultimately failed to operate as intended, leading to delays, operational issues, and eventual replacement with a simpler alternative.\nThe analysis was completed as part of the MNA1096 module at DCU, applying key project management frameworks to evaluate what went wrong and what could have been done differently.\n\n\n\n\n\n\nNote\n\n\n\nModule: MNA1096 — Project Management\nCase: Harvest City Convention Complex — Intelligent Procurement System Failure"
+  },
+  {
+    "objectID": "projects/pm.html#overview",
+    "href": "projects/pm.html#overview",
+    "title": "Project Management — Harvest City Case Study",
+    "section": "",
+    "text": "This project is a critical analysis of the failure of an intelligent procurement system developed for the Harvest City Convention Complex. The system was an ambitious IoT-based solution intended to automate procurement across multiple tenants, but ultimately failed to operate as intended, leading to delays, operational issues, and eventual replacement with a simpler alternative.\nThe analysis was completed as part of the MNA1096 module at DCU, applying key project management frameworks to evaluate what went wrong and what could have been done differently.\n\n\n\n\n\n\nNote\n\n\n\nModule: MNA1096 — Project Management\nCase: Harvest City Convention Complex — Intelligent Procurement System Failure"
+  },
+  {
+    "objectID": "projects/pm.html#project-background",
+    "href": "projects/pm.html#project-background",
+    "title": "Project Management — Harvest City Case Study",
+    "section": "Project Background",
+    "text": "Project Background\nThe Harvest City project involved developing a large convention complex designed to position the city as a major destination for business and tourism. The intelligent procurement system was originally commissioned by the hotel operator, then later expanded to cover the entire complex, a decision made after construction had already begun.\nThe system relied on IoT sensors, real-time data integration, and automated decision-making to monitor inventory and trigger procurement orders automatically. While the potential benefits were significant, the project was undermined by a series of fundamental project management failures."
+  },
+  {
+    "objectID": "projects/pm.html#critical-analysis",
+    "href": "projects/pm.html#critical-analysis",
+    "title": "Project Management — Harvest City Case Study",
+    "section": "Critical Analysis",
+    "text": "Critical Analysis\n\nGovernance and Leadership\nOne of the most significant contributing factors was weak project governance following the resignation of the CEO, John Casper, in December 2015. His responsibilities were divided among multiple executives, resulting in fragmented leadership and reduced accountability.\n\n\n\n\n\n\nWarning\n\n\n\nKey failure: No single individual was responsible for overseeing the overall project after the CEO’s departure, making it difficult to manage priorities, enforce change control, or resolve stakeholder conflicts.\n\n\nMüller and Turner (2007) argue that leadership style and capability must align with project complexity. In this case, the project manager assigned lacked experience in managing complex IT systems, and the project was treated as a standard construction component rather than a high-risk digital system requiring specialist oversight.\n\n\nScope and Change Management\nThe project suffered from severe scope creep, beginning as a procurement system for a single hotel before expanding into a fully integrated solution covering the entire convention complex. This expansion occurred mid-construction, requiring significant redesign and in some cases demolition and rebuilding of completed sections.\n\n\nShow scope growth visualisation code\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nphases = ['Original scope\\n(single hotel)', 'Expanded scope\\n(full complex)', \n          'Change requests\\nadded', 'Final system\\ndelivered']\ncomplexity = [1, 4, 7, 3]\ncost_impact = [1, 3, 8, 5]\n\nx = np.arange(len(phases))\nfig, ax = plt.subplots(figsize=(10, 5))\nax.plot(x, complexity, marker='o', label='Complexity index', \n        color='#d94701', linewidth=2.5)\nax.plot(x, cost_impact, marker='s', label='Cost impact index', \n        color='#2e7dcc', linewidth=2.5, linestyle='--')\nax.set_xticks(x)\nax.set_xticklabels(phases)\nax.set_ylabel('Relative index')\nax.set_title('Scope Complexity and Cost Impact Over Project Lifecycle', fontsize=12)\nax.legend()\nax.set_ylim(0, 10)\nplt.tight_layout()\nplt.show()\n\n\nSerrador and Pinto (2015) found that projects with well-defined and stable scopes are significantly more likely to succeed. In Harvest City, there was no formal change management process — stakeholders treated agreed specifications as flexible and continued requesting modifications even after contracts were signed.\n\n\nStakeholder Management\nThe decision to implement the complex integrated system was made centrally, without consulting the tenants who would ultimately use it. As a result, different stakeholders had varying and often conflicting expectations that only became apparent during implementation.\n\n\n\n\n\n\n\n\nStakeholder Group\nEngagement Level\nImpact\n\n\n\n\nCity council\nHigh — strategic decisions\nPositive early, limited later\n\n\nHotel operator\nMedium — original client\nMisaligned expectations\n\n\nComplex tenants\nLow — consulted late\nLate-stage change requests\n\n\nVendors / contractors\nFragmented\nIntegration failures\n\n\n\nEffective stakeholder management requires early engagement and continuous communication to align expectations. The failure to involve tenants at the design stage meant their needs were not understood until it was too late to incorporate them without significant disruption.\n\n\nRisk Management and Technological Complexity\nThe project significantly underestimated the risks associated with integrating advanced IoT technologies into an ongoing construction project. The most visible consequence was a system failure during the pre-opening event, where sensor errors triggered the fire alarm and sprinkler system, demonstrating how tightly coupled systems can fail catastrophically when not properly tested.\n\n\n\n\n\n\nWarning\n\n\n\nKey failure: Changes made by other contractors interfered with the procurement system without the primary vendor being informed, a direct result of poor coordination and absent risk oversight.\n\n\nChapman and Ward (1998) argue that projects involving high uncertainty and new technology require proactive risk planning and flexible responses. In Harvest City, risks were addressed reactively, only after problems had already occurred."
+  },
+  {
+    "objectID": "projects/pm.html#recommendations",
+    "href": "projects/pm.html#recommendations",
+    "title": "Project Management — Harvest City Case Study",
+    "section": "Recommendations",
+    "text": "Recommendations\nBased on the analysis, five key improvements could have significantly changed the outcome:\n1. Stronger governance structure — appointing an experienced IT project manager following the CEO’s resignation, with clear authority and defined escalation paths.\n2. Formal change management process — all proposed changes subject to structured impact assessment covering cost, time, and system performance before approval.\n3. Early stakeholder engagement — involving all tenants in defining system requirements before implementation began, reducing late-stage change requests.\n4. Phased implementation — deploying and validating the system in the hotel first before extending to the full complex, aligned with agile principles of iterative development (Serrador & Pinto, 2015).\n5. Structured risk management - early identification of technical and integration risks, thorough testing protocols, and clear vendor coordination agreements.\n\n\n\n\n\nflowchart TD\n    A[Define governance structure] --&gt; B[Engage all stakeholders early]\n    B --&gt; C[Agree stable requirements]\n    C --&gt; D[Implement change control process]\n    D --&gt; E[Phase 1: Hotel pilot]\n    E --&gt; F[Test and validate]\n    F --&gt; G[Phase 2: Full complex rollout]\n    G --&gt; H[Continuous risk monitoring]"
+  },
+  {
+    "objectID": "projects/pm.html#key-learnings",
+    "href": "projects/pm.html#key-learnings",
+    "title": "Project Management — Harvest City Case Study",
+    "section": "Key Learnings",
+    "text": "Key Learnings\nThis case study reinforced how project failures are rarely caused by a single issue, they typically result from the compounding effect of multiple weaknesses across governance, scope, stakeholder management, and risk. The technology itself was not the problem; the way the project was managed around it was.\nIt also highlighted how the fundamentals of project management, clear leadership, defined scope, stakeholder alignment, and proactive risk planning, remain critical regardless of how innovative or ambitious the technology involved is.\n\n\n\n\n\n\n\nNote Full Case Study\n\n\n\nView or download the complete case study submitted for MNA1096 Project Management.\n Download Case Study"
+  },
+  {
+    "objectID": "projects/ml.html",
+    "href": "projects/ml.html",
+    "title": "Machine Learning & Advanced Python",
+    "section": "",
+    "text": "This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset, approximately 20:1 in favour of non-stroke cases, and producing models that could maximise recall of true stroke cases without sacrificing overall performance.\n\n\n\n\n\n\nNote\n\n\n\nDataset: Stroke Prediction Dataset: 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type."
+  },
+  {
+    "objectID": "projects/ml.html#overview",
+    "href": "projects/ml.html#overview",
+    "title": "Machine Learning & Advanced Python",
+    "section": "",
+    "text": "This project involved building and evaluating three machine learning models to predict the likelihood of stroke in patients, using a real-world medical dataset. The task required handling a heavily imbalanced dataset, approximately 20:1 in favour of non-stroke cases, and producing models that could maximise recall of true stroke cases without sacrificing overall performance.\n\n\n\n\n\n\nNote\n\n\n\nDataset: Stroke Prediction Dataset: 5,110 patient records with features including age, BMI, average glucose level, smoking status, hypertension, and work type."
+  },
+  {
+    "objectID": "projects/ml.html#tools-libraries",
+    "href": "projects/ml.html#tools-libraries",
+    "title": "Machine Learning & Advanced Python",
+    "section": "Tools & Libraries",
+    "text": "Tools & Libraries\n\n\n\nLibrary\nPurpose\n\n\n\n\npandas / numpy\nData manipulation and preprocessing\n\n\nscikit-learn\nModel training, evaluation, GridSearchCV\n\n\nimbalanced-learn\nSMOTE oversampling\n\n\nxgboost\nXGBoost classifier\n\n\nseaborn / matplotlib\nData visualisation"
+  },
+  {
+    "objectID": "projects/ml.html#methodology",
+    "href": "projects/ml.html#methodology",
+    "title": "Machine Learning & Advanced Python",
+    "section": "Methodology",
+    "text": "Methodology\n\n1. Exploratory Data Analysis\nThe dataset was first examined for structure, missing values, and class imbalance. BMI had 201 missing values, which were imputed using the median. A single record with gender “Other” was removed.\n\n\nShow EDA code\nimport pandas as pd\nimport numpy as np\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Load and inspect the dataset\nfile = '/content/strokedataset.csv'\ndata = pd.read_csv(file)\n\nprint(\"Dataset shape:\", data.shape)\nprint(\"\\nMissing values:\\n\", data.isna().sum())\nprint(\"\\nClass distribution:\\n\", data['stroke'].value_counts())\nprint(f\"\\nClass imbalance ratio: {data['stroke'].value_counts()[0] / data['stroke'].value_counts()[1]:.1f}:1\")\n\n\nThe dataset was significantly imbalanced, with only 4.87% of cases being positive stroke events, a common challenge in medical datasets that requires careful handling to avoid models that simply predict “no stroke” for every patient.\n\n\n2. Preprocessing\n\n\nShow preprocessing code\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.preprocessing import LabelEncoder, StandardScaler\nfrom imblearn.over_sampling import SMOTE\n\n# Impute missing BMI with median\ndata['bmi'] = pd.to_numeric(data['bmi'], errors='coerce')\ndata['bmi'] = data['bmi'].fillna(data['bmi'].median())\n\n# Drop ID and remove 'Other' gender\ndata.drop(columns=['id'], inplace=True)\ndata = data[data['gender'] != 'Other']\n\n# Encode categorical variables\nle = LabelEncoder()\nfor col in ['gender', 'ever_married', 'work_type', 'Residence_type', 'smoking_status']:\n    data[col] = le.fit_transform(data[col])\n\n# Split, scale, and apply SMOTE\nX = data.drop('stroke', axis=1)\ny = data['stroke']\n\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, stratify=y, random_state=42)\n\nscaler = StandardScaler()\nX_train_sc = scaler.fit_transform(X_train)\nX_test_sc = scaler.transform(X_test)\n\nsmote = SMOTE(sampling_strategy=0.3, k_neighbors=5, random_state=42)\nX_train_sm, y_train_sm = smote.fit_resample(X_train_sc, y_train)\n\n\nSMOTE (Synthetic Minority Over-sampling Technique) was applied with a sampling strategy of 0.3, generating synthetic stroke cases to reduce the class imbalance in the training set without duplicating existing records.\n\n\n3. Model Training\nThree classifiers were trained and compared:\n\n\nShow model training code\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.model_selection import GridSearchCV\nfrom xgboost import XGBClassifier\n\n# Logistic Regression\nlog_reg = LogisticRegression(max_iter=1000, class_weight='balanced', random_state=42)\nlog_reg.fit(X_train_sm, y_train_sm)\n\n# Random Forest with GridSearchCV\nparam_grid_rf = {\n    'n_estimators': [100, 200],\n    'max_depth': [4, 6, None],\n    'min_samples_leaf': [2, 5],\n    'class_weight': ['balanced']\n}\ngrid_rf = GridSearchCV(\n    RandomForestClassifier(random_state=42),\n    param_grid_rf, scoring='roc_auc', cv=5, n_jobs=-1)\ngrid_rf.fit(X_train_sm, y_train_sm)\nbest_rf = grid_rf.best_estimator_\n\n# XGBoost\nxgb = XGBClassifier(\n    scale_pos_weight=10, max_depth=4, learning_rate=0.05,\n    n_estimators=200, min_child_weight=3, gamma=0.2,\n    subsample=0.8, colsample_bytree=0.8,\n    eval_metric='logloss', random_state=42, verbosity=0)\nxgb.fit(X_train_sm, y_train_sm)"
+  },
+  {
+    "objectID": "projects/ml.html#results",
+    "href": "projects/ml.html#results",
+    "title": "Machine Learning & Advanced Python",
+    "section": "Results",
+    "text": "Results\n\n\n\nModel\nAccuracy\nPrecision\nRecall\nF1-Score\nROC-AUC\n\n\n\n\nLogistic Regression\n0.7423\n0.1891\n0.7143\n0.2993\n0.7912\n\n\nRandom Forest\n0.9141\n0.3448\n0.2857\n0.3125\n0.8203\n\n\nXGBoost\n0.8200\n0.2174\n0.5714\n0.3143\n0.7834\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nKey finding: Random Forest achieved the highest ROC-AUC (0.82), making it the strongest overall performer. For a medical screening context where missing a stroke is more costly than a false alarm, Logistic Regression’s higher recall (0.71) may be preferable despite lower precision."
+  },
+  {
+    "objectID": "projects/ml.html#key-learnings",
+    "href": "projects/ml.html#key-learnings",
+    "title": "Machine Learning & Advanced Python",
+    "section": "Key Learnings",
+    "text": "Key Learnings\nWorking with this project reinforced the importance of understanding the business context behind model selection. In healthcare, recall often matters more than accuracy. It also highlighted the practical challenges of class imbalance and the value of techniques like SMOTE and class_weight='balanced' in producing fair models on skewed data.\n\n\n\n\n\n\n\nNote Full Project Report\n\n\n\nView or download the complete project report including all code, visualisations, and analysis.\n Download Full Report"
   },
   {
     "objectID": "projects/ned.html",

@@ -1,0 +1,135 @@
+---
+title: "Project Management — Harvest City Case Study"
+description: "A critical analysis of the failure of an IoT-based intelligent procurement system at the Harvest City Convention Complex, examining governance, scope management, stakeholder engagement, and risk management."
+date: 2026-04-01
+categories: [Project Management, Strategy, Academic]
+image: images/harvest-cover.png
+---
+
+## Overview
+
+This project is a critical analysis of the failure of an intelligent procurement system developed for the **Harvest City Convention Complex**. The system was an ambitious IoT-based solution intended to automate procurement across multiple tenants, but ultimately failed to operate as intended, leading to delays, operational issues, and eventual replacement with a simpler alternative.
+
+The analysis was completed as part of the MNA1096 module at DCU, applying key project management frameworks to evaluate what went wrong and what could have been done differently.
+
+::: {.callout-note}
+**Module:** MNA1096 — Project Management  
+**Case:** Harvest City Convention Complex — Intelligent Procurement System Failure
+:::
+
+## Project Background
+
+The Harvest City project involved developing a large convention complex designed to position the city as a major destination for business and tourism. The intelligent procurement system was originally commissioned by the hotel operator, then later expanded to cover the entire complex, a decision made **after construction had already begun**.
+
+The system relied on IoT sensors, real-time data integration, and automated decision-making to monitor inventory and trigger procurement orders automatically. While the potential benefits were significant, the project was undermined by a series of fundamental project management failures.
+
+## Critical Analysis
+
+### Governance and Leadership
+
+One of the most significant contributing factors was weak project governance following the resignation of the CEO, John Casper, in December 2015. His responsibilities were divided among multiple executives, resulting in fragmented leadership and reduced accountability.
+
+::: {.callout-warning}
+**Key failure:** No single individual was responsible for overseeing the overall project after the CEO's departure, making it difficult to manage priorities, enforce change control, or resolve stakeholder conflicts.
+:::
+
+Müller and Turner (2007) argue that leadership style and capability must align with project complexity. In this case, the project manager assigned lacked experience in managing complex IT systems, and the project was treated as a standard construction component rather than a high-risk digital system requiring specialist oversight.
+
+### Scope and Change Management
+
+The project suffered from severe **scope creep**, beginning as a procurement system for a single hotel before expanding into a fully integrated solution covering the entire convention complex. This expansion occurred mid-construction, requiring significant redesign and in some cases demolition and rebuilding of completed sections.
+
+```{python}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: "Show scope growth visualisation code"
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+phases = ['Original scope\n(single hotel)', 'Expanded scope\n(full complex)', 
+          'Change requests\nadded', 'Final system\ndelivered']
+complexity = [1, 4, 7, 3]
+cost_impact = [1, 3, 8, 5]
+
+x = np.arange(len(phases))
+fig, ax = plt.subplots(figsize=(10, 5))
+ax.plot(x, complexity, marker='o', label='Complexity index', 
+        color='#d94701', linewidth=2.5)
+ax.plot(x, cost_impact, marker='s', label='Cost impact index', 
+        color='#2e7dcc', linewidth=2.5, linestyle='--')
+ax.set_xticks(x)
+ax.set_xticklabels(phases)
+ax.set_ylabel('Relative index')
+ax.set_title('Scope Complexity and Cost Impact Over Project Lifecycle', fontsize=12)
+ax.legend()
+ax.set_ylim(0, 10)
+plt.tight_layout()
+plt.show()
+```
+
+Serrador and Pinto (2015) found that projects with well-defined and stable scopes are significantly more likely to succeed. In Harvest City, there was no formal change management process — stakeholders treated agreed specifications as flexible and continued requesting modifications even after contracts were signed.
+
+### Stakeholder Management
+
+The decision to implement the complex integrated system was made centrally, without consulting the tenants who would ultimately use it. As a result, different stakeholders had varying and often conflicting expectations that only became apparent during implementation.
+
+| Stakeholder Group | Engagement Level | Impact |
+|---|---|---|
+| City council | High — strategic decisions | Positive early, limited later |
+| Hotel operator | Medium — original client | Misaligned expectations |
+| Complex tenants | Low — consulted late | Late-stage change requests |
+| Vendors / contractors | Fragmented | Integration failures |
+
+Effective stakeholder management requires early engagement and continuous communication to align expectations. The failure to involve tenants at the design stage meant their needs were not understood until it was too late to incorporate them without significant disruption.
+
+### Risk Management and Technological Complexity
+
+The project significantly underestimated the risks associated with integrating advanced IoT technologies into an ongoing construction project. The most visible consequence was a system failure during the pre-opening event, where sensor errors triggered the fire alarm and sprinkler system, demonstrating how tightly coupled systems can fail catastrophically when not properly tested.
+
+::: {.callout-warning}
+**Key failure:** Changes made by other contractors interfered with the procurement system without the primary vendor being informed, a direct result of poor coordination and absent risk oversight.
+:::
+
+Chapman and Ward (1998) argue that projects involving high uncertainty and new technology require proactive risk planning and flexible responses. In Harvest City, risks were addressed reactively, only after problems had already occurred.
+
+## Recommendations
+
+Based on the analysis, five key improvements could have significantly changed the outcome:
+
+**1. Stronger governance structure** — appointing an experienced IT project manager following the CEO's resignation, with clear authority and defined escalation paths.
+
+**2. Formal change management process** — all proposed changes subject to structured impact assessment covering cost, time, and system performance before approval.
+
+**3. Early stakeholder engagement** — involving all tenants in defining system requirements before implementation began, reducing late-stage change requests.
+
+**4. Phased implementation** — deploying and validating the system in the hotel first before extending to the full complex, aligned with agile principles of iterative development (Serrador & Pinto, 2015).
+
+**5. Structured risk management** - early identification of technical and integration risks, thorough testing protocols, and clear vendor coordination agreements.
+
+```{mermaid}
+flowchart TD
+    A[Define governance structure] --> B[Engage all stakeholders early]
+    B --> C[Agree stable requirements]
+    C --> D[Implement change control process]
+    D --> E[Phase 1: Hotel pilot]
+    E --> F[Test and validate]
+    F --> G[Phase 2: Full complex rollout]
+    G --> H[Continuous risk monitoring]
+```
+
+## Key Learnings
+
+This case study reinforced how project failures are rarely caused by a single issue, they typically result from the compounding effect of multiple weaknesses across governance, scope, stakeholder management, and risk. The technology itself was not the problem; the way the project was managed around it was.
+
+It also highlighted how the fundamentals of project management, clear leadership, defined scope, stakeholder alignment, and proactive risk planning, remain critical regardless of how innovative or ambitious the technology involved is.
+
+---
+
+::: {.callout-note icon=false}
+## {{< fa file-pdf >}} Full Case Study
+View or download the complete case study submitted for MNA1096 Project Management.
+
+[{{< fa download >}} Download Case Study](../pdfs/BenQuilliganMNA1096.pdf){target="_blank" .btn .btn-primary}
+:::

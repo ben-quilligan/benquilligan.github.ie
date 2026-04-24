@@ -3,6 +3,7 @@
     "listing": "/projects/index.html",
     "items": [
       "/projects/ml.html",
+      "/projects/bs.html",
       "/projects/pm.html",
       "/projects/ned.html"
     ]
