@@ -41,7 +41,7 @@ The project suffered from severe **scope creep**, beginning as a procurement sys
 
 ```{python}
 #| echo: true
-#| eval: false
+#| eval: true
 #| code-fold: true
 #| code-summary: "Show scope growth visualisation code"
 
