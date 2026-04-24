@@ -4,10 +4,10 @@ project:
 
 website:
   title: "Ben Quilligan"
-  favicon: profilepic.jpg
+  favicon: logo.png
   navbar:
     title: false
-    logo: profilepic.jpg
+    logo: logo.png
     left:
       - href: index.qmd
         text: Home
