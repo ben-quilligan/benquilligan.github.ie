@@ -1,0 +1,62 @@
+---
+title: "Reflection"
+---
+
+## Overview
+
+This ePortfolio represents the culmination of my final year of study in Business Studies at Dublin City University. Building it has given me an opportunity to look back on what I have learned to prepare me for a career in analytics.
+
+::: {.callout-note}
+This reflection covers my experience across some of the key skills I have developed during this degree including analytics entrepreneurship, and strategy.
+:::
+
+## Data Analytics & Machine Learning
+
+Before starting this degree I had no programming experience. Learning Python from scratch was one of the steepest learning curves I faced, but it has become one of the most valuable skills I have developed. 
+
+The machine learning project, building stroke prediction models using logistic regression, random forest, and XGBoost, pushed me well beyond the basics. Working with a real medical dataset forced me to confront practical challenges such as handling missing data, dealing with severe class imbalance, and making model selection decisions that reflect the actual cost of errors in a healthcare context.
+
+One of the most important things I learned is that clean, well-documented code matters as much as the results it produces. Writing code that another analyst could read and understand, by using clear variable names, comments, and structured sections, is a professional habit I will carry into my career.
+
+## Web Development — Quarto & Git
+
+Building this site was my first real experience with version control and static site publishing. This project required a deep understanding of how repositories, branches, commits, and deployment pipelines work together.
+
+The process was not without difficulty. I encountered Jekyll conflicts, deployment errors, broken paths, and duplicate build artifacts, each of which required diagnosing the root cause rather than just trying random fixes. Working through those issues gave me a much stronger mental model of how web publishing actually works.
+
+```{mermaid}
+flowchart LR
+    A[Write .qmd files] --> B[quarto render]
+    B --> C[docs/ folder generated]
+    C --> D[git add & commit]
+    D --> E[git push]
+    E --> F[GitHub Pages deploys]
+    F --> G[Live website]
+```
+
+## New Enterprise Development — Mantis
+
+The Mantis project was one of the most demanding and rewarding experiences of my degree. Developing a full business plan from concept to investor pitch, across product development, market research, financial modelling, and regulatory compliance, required integrating skills from across the entire degree.
+
+Taking the role of CEO and product development lead meant I was responsible for the overall direction of the plan while also coordinating contributions from four teammates. This tested my ability to manage competing priorities, give and receive constructive feedback, and maintain momentum across a long project.
+
+## Business Strategy
+
+The Lyten case study was an exercise in applying theoretical frameworks to a real, ambiguous strategic situation. Analysing a company that was simultaneously integrating distressed assets, managing competing technologies, and expanding internationally required holding multiple perspectives at once — something that does not come naturally and takes practice.
+
+Working with frameworks like the Uppsala model, Resource-Based View, and Porter's Five Forces taught me that theory is most useful when it is treated as a lens rather than a checklist. The best analysis I produced came when I used frameworks to structure my thinking, not to replace it.
+
+## Professional Experience — PwC Digital Team
+
+My co-op at PwC from June 2024 to July 2025 was the single most formative experience of my degree. Working within the Digital Team gave me direct exposure to how large organisations adopt new technologies, and how difficult that process is in practice.
+
+Facilitating ideation workshops, building Power Automate solutions, creating Power BI dashboards, and supporting the M365 migration all required me to move quickly between technical and interpersonal modes, explaining tool functionality to senior stakeholders one moment, and debugging an asset the next.
+
+Having my contract extended to onboard and train new interns was something I was particularly proud of. It confirmed that the skills and knowledge I had built over the placement were genuinely valued, and gave me early experience of teaching and knowledge transfer.
+
+## Looking Forward
+
+I am graduating in Summer 2026 with a clearer sense of the career I want going forward. I am most energised by work that sits at the intersection of technical analysis and strategic decision-making, using data to answer questions that actually matter to an organisation, and communicating those answers in a way that drives action.
+
+The skills I have built during this degree, Python, SQL, Power BI, Power Automate, machine learning, business strategy, and financial modelling, give me a strong foundation. But more than any individual skill, I leave DCU with a way of approaching problems: breaking them down, finding the right framework, building something rigorous, and communicating it clearly.
+

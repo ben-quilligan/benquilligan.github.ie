@@ -229,5 +229,61 @@
     "title": "Certifications",
     "section": "DataCamp",
     "text": "DataCamp\n\n\n\nCourse\nDate\nLength\n\n\n\n\nIntroduction to NumPy\nNovember 25, 2025\n4 hrs"
+  },
+  {
+    "objectID": "reflection.html",
+    "href": "reflection.html",
+    "title": "Reflection",
+    "section": "",
+    "text": "This ePortfolio represents the culmination of my final year of study in Business Studies at Dublin City University. Building it has given me an opportunity to look back on what I have learned to prepare me for a career in analytics.\n\n\n\n\n\n\nNote\n\n\n\nThis reflection covers my experience across some of the key skills I have developed during this degree including analytics entrepreneurship, and strategy."
+  },
+  {
+    "objectID": "reflection.html#overview",
+    "href": "reflection.html#overview",
+    "title": "Reflection",
+    "section": "",
+    "text": "This ePortfolio represents the culmination of my final year of study in Business Studies at Dublin City University. Building it has given me an opportunity to look back on what I have learned to prepare me for a career in analytics.\n\n\n\n\n\n\nNote\n\n\n\nThis reflection covers my experience across some of the key skills I have developed during this degree including analytics entrepreneurship, and strategy."
+  },
+  {
+    "objectID": "reflection.html#data-analytics-machine-learning",
+    "href": "reflection.html#data-analytics-machine-learning",
+    "title": "Reflection",
+    "section": "Data Analytics & Machine Learning",
+    "text": "Data Analytics & Machine Learning\nBefore starting this degree I had no programming experience. Learning Python from scratch was one of the steepest learning curves I faced, but it has become one of the most valuable skills I have developed.\nThe machine learning project, building stroke prediction models using logistic regression, random forest, and XGBoost, pushed me well beyond the basics. Working with a real medical dataset forced me to confront practical challenges such as handling missing data, dealing with severe class imbalance, and making model selection decisions that reflect the actual cost of errors in a healthcare context.\nOne of the most important things I learned is that clean, well-documented code matters as much as the results it produces. Writing code that another analyst could read and understand, by using clear variable names, comments, and structured sections, is a professional habit I will carry into my career."
+  },
+  {
+    "objectID": "reflection.html#web-development-quarto-git",
+    "href": "reflection.html#web-development-quarto-git",
+    "title": "Reflection",
+    "section": "Web Development — Quarto & Git",
+    "text": "Web Development — Quarto & Git\nBuilding this site was my first real experience with version control and static site publishing. This project required a deep understanding of how repositories, branches, commits, and deployment pipelines work together.\nThe process was not without difficulty. I encountered Jekyll conflicts, deployment errors, broken paths, and duplicate build artifacts, each of which required diagnosing the root cause rather than just trying random fixes. Working through those issues gave me a much stronger mental model of how web publishing actually works.\n\n\n\n\n\nflowchart LR\n    A[Write .qmd files] --&gt; B[quarto render]\n    B --&gt; C[docs/ folder generated]\n    C --&gt; D[git add & commit]\n    D --&gt; E[git push]\n    E --&gt; F[GitHub Pages deploys]\n    F --&gt; G[Live website]"
+  },
+  {
+    "objectID": "reflection.html#new-enterprise-development-mantis",
+    "href": "reflection.html#new-enterprise-development-mantis",
+    "title": "Reflection",
+    "section": "New Enterprise Development — Mantis",
+    "text": "New Enterprise Development — Mantis\nThe Mantis project was one of the most demanding and rewarding experiences of my degree. Developing a full business plan from concept to investor pitch, across product development, market research, financial modelling, and regulatory compliance, required integrating skills from across the entire degree.\nTaking the role of CEO and product development lead meant I was responsible for the overall direction of the plan while also coordinating contributions from four teammates. This tested my ability to manage competing priorities, give and receive constructive feedback, and maintain momentum across a long project."
+  },
+  {
+    "objectID": "reflection.html#business-strategy",
+    "href": "reflection.html#business-strategy",
+    "title": "Reflection",
+    "section": "Business Strategy",
+    "text": "Business Strategy\nThe Lyten case study was an exercise in applying theoretical frameworks to a real, ambiguous strategic situation. Analysing a company that was simultaneously integrating distressed assets, managing competing technologies, and expanding internationally required holding multiple perspectives at once — something that does not come naturally and takes practice.\nWorking with frameworks like the Uppsala model, Resource-Based View, and Porter’s Five Forces taught me that theory is most useful when it is treated as a lens rather than a checklist. The best analysis I produced came when I used frameworks to structure my thinking, not to replace it."
+  },
+  {
+    "objectID": "reflection.html#professional-experience-pwc-digital-team",
+    "href": "reflection.html#professional-experience-pwc-digital-team",
+    "title": "Reflection",
+    "section": "Professional Experience — PwC Digital Team",
+    "text": "Professional Experience — PwC Digital Team\nMy co-op at PwC from June 2024 to July 2025 was the single most formative experience of my degree. Working within the Digital Team gave me direct exposure to how large organisations adopt new technologies, and how difficult that process is in practice.\nFacilitating ideation workshops, building Power Automate solutions, creating Power BI dashboards, and supporting the M365 migration all required me to move quickly between technical and interpersonal modes, explaining tool functionality to senior stakeholders one moment, and debugging an asset the next.\nHaving my contract extended to onboard and train new interns was something I was particularly proud of. It confirmed that the skills and knowledge I had built over the placement were genuinely valued, and gave me early experience of teaching and knowledge transfer."
+  },
+  {
+    "objectID": "reflection.html#looking-forward",
+    "href": "reflection.html#looking-forward",
+    "title": "Reflection",
+    "section": "Looking Forward",
+    "text": "Looking Forward\nI am graduating in Summer 2026 with a clearer sense of the career I want going forward. I am most energised by work that sits at the intersection of technical analysis and strategic decision-making, using data to answer questions that actually matter to an organisation, and communicating those answers in a way that drives action.\nThe skills I have built during this degree, Python, SQL, Power BI, Power Automate, machine learning, business strategy, and financial modelling, give me a strong foundation. But more than any individual skill, I leave DCU with a way of approaching problems: breaking them down, finding the right framework, building something rigorous, and communicating it clearly."
   }
 ]
