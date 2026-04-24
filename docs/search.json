@@ -81,7 +81,7 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "A selection of academic projects completed as part of my Bachelor of Business Studies (Data Analytics) at Dublin City University.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Management — Lyten Case Study\n\n\n\nStrategy\n\nBusiness\n\nAcademic\n\n\n\nA strategic analysis of Lyten’s acquisition of Northvolt assets, examining post-acquisition integration, internationalisation strategy, and geopolitical alignment using core…\n\n\n\nApr 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew Enterprise Development — Mantis\n\n\n\nEntrepreneurship\n\nBusiness Planning\n\nStrategy\n\n\n\nA full business plan for Mantis, an insect-protein ready-to-drink shake targeting the Irish health and wellness market. Developed as part of the BAA1003 New Enterprise…\n\n\n\nApr 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning & Advanced Python\n\n\n\nPython\n\nMachine Learning\n\nData Analytics\n\n\n\nStroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset — including EDA, SMOTE oversampling, and ROC curve analysis.\n\n\n\nApr 25, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "A selection of academic projects completed as part of my Bachelor of Business Studies (Data Analytics) at Dublin City University.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning & Advanced Python\n\n\n\nPython\n\nMachine Learning\n\nData Analytics\n\n\n\nStroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset — including EDA, SMOTE oversampling, and ROC curve analysis.\n\n\n\nApr 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Management — Lyten Case Study\n\n\n\nStrategy\n\nBusiness\n\nAcademic\n\n\n\nA strategic analysis of Lyten’s acquisition of Northvolt assets, examining post-acquisition integration, internationalisation strategy, and geopolitical alignment using core…\n\n\n\nApr 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew Enterprise Development — Mantis\n\n\n\nEntrepreneurship\n\nBusiness Planning\n\nStrategy\n\n\n\nA full business plan for Mantis, an insect-protein ready-to-drink shake targeting the Irish health and wellness market. Developed as part of the BAA1003 New Enterprise…\n\n\n\nApr 1, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/pm.html",
@@ -285,5 +285,26 @@
     "title": "Reflection",
     "section": "Looking Forward",
     "text": "Looking Forward\nI am graduating in Summer 2026 with a clearer sense of the career I want going forward. I am most energised by work that sits at the intersection of technical analysis and strategic decision-making, using data to answer questions that actually matter to an organisation, and communicating those answers in a way that drives action.\nThe skills I have built during this degree, Python, SQL, Power BI, Power Automate, machine learning, business strategy, and financial modelling, give me a strong foundation. But more than any individual skill, I leave DCU with a way of approaching problems: breaking them down, finding the right framework, building something rigorous, and communicating it clearly."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I am currently in my final year at Dublin City University and actively looking for a graduate role with a focus on data analytics. If you would like to get in touch, please use any of the channels below."
+  },
+  {
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Contact",
+    "section": "Get in Touch",
+    "text": "Get in Touch\n\n\n\n Email\nbenquilligan1@gmail.com\n\n\n LinkedIn\nlinkedin.com/in/benquilligan\n\n\n GitHub\ngithub.com/ben-quilligan\n\n\n Location\nDublin, Ireland\n\n\n\n\n\n\n\n\n\nNote CV\n\n\n\nMy full CV is available to download as a PDF.\n Download CV\n\n\n\n\n\n\n\n\nTip Availability\n\n\n\nI am graduating in Summer 2026 and available for graduate roles from that point. I am open to roles in data analytics, business intelligence, and digital transformation."
+  },
+  {
+    "objectID": "contact.html#references",
+    "href": "contact.html#references",
+    "title": "Contact",
+    "section": "References",
+    "text": "References\nReferences are available upon request. Please get in touch via email or LinkedIn and I will be happy to provide details.\n\nThis site was built with Quarto and published via GitHub Pages."
   }
 ]

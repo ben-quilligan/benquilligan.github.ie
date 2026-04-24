@@ -18,7 +18,7 @@ about:
       href: https://github.com/ben-quilligan
       target: _blank
     - text: "{{< fa file-pdf >}} CV"
-      href: cv/BenQuilligan_CV.pdf
+      href: BenQuilliganCV.pdf
       target: _blank
 ---
 
@@ -39,5 +39,5 @@ This site is my ePortfolio, showcasing academic projects, certifications, and pr
 | [About Me](about.qmd) | Background, skills, and goals |
 | [Projects](projects/index.qmd) | Academic work with Python code |
 | [Certifications](certifications.qmd) | Kubicle and DataCamp credentials |
-| [CV](cv/BenQuilligan_CV.pdf) | Full curriculum vitae (PDF) |
+| [CV](BenQuilliganCV.pdf) | Full curriculum vitae (PDF) |
 | [Reflection](reflection.qmd) | What I learned throughout this module |
