@@ -18,7 +18,7 @@ about:
       href: https://github.com/ben-quilligan
       target: _blank
     - text: "{{< fa file-pdf >}} CV"
-      href: BenQuilliganCV.pdf
+      href: /benquilligan.github.ie/BenQuilliganCV.pdf
       target: _blank
 ---
 

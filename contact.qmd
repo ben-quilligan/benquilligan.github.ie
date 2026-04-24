@@ -30,7 +30,7 @@ Dublin, Ireland
 ## {{< fa file-pdf >}} CV
 My full CV is available to download as a PDF.
 
-[{{< fa download >}} Download CV](cv/BenQuilligan_CV.pdf){target="_blank" .btn .btn-outline-primary}
+[{{< fa download >}} Download CV](BenQuilliganCV.pdf){target="_blank" .btn .btn-outline-primary}
 :::
 
 ::: {.callout-tip}
