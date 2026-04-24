@@ -270,7 +270,7 @@ Note
 <section id="exploratory-data-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="exploratory-data-analysis">1. Exploratory Data Analysis</h3>
 <p>The dataset was first examined for structure, missing values, and class imbalance. BMI had 201 missing values, which were imputed using the median. A single record with gender “Other” was removed.</p>
-<div id="b8e2c7cd" class="cell" data-execution_count="1">
+<div id="98e3c3d4" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show EDA code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -292,7 +292,7 @@ Note
 </section>
 <section id="preprocessing" class="level3">
 <h3 class="anchored" data-anchor-id="preprocessing">2. Preprocessing</h3>
-<div id="53378dfe" class="cell" data-execution_count="2">
+<div id="86c68573" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Show preprocessing code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
@@ -332,7 +332,7 @@ Note
 <section id="model-training" class="level3">
 <h3 class="anchored" data-anchor-id="model-training">3. Model Training</h3>
 <p>Three classifiers were trained and compared:</p>
-<div id="aa1dd21a" class="cell" data-execution_count="3">
+<div id="6f3d3b40" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Show model training code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
@@ -370,6 +370,44 @@ Note
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
+<div id="7f0374cb" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Show results visualisation code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>models <span class="op">=</span> [<span class="st">'Logistic</span><span class="ch">\n</span><span class="st">Regression'</span>, <span class="st">'Random</span><span class="ch">\n</span><span class="st">Forest'</span>, <span class="st">'XGBoost'</span>]</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>accuracy  <span class="op">=</span> [<span class="fl">0.7423</span>, <span class="fl">0.9141</span>, <span class="fl">0.8200</span>]</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>recall    <span class="op">=</span> [<span class="fl">0.7143</span>, <span class="fl">0.2857</span>, <span class="fl">0.5714</span>]</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>f1        <span class="op">=</span> [<span class="fl">0.2993</span>, <span class="fl">0.3125</span>, <span class="fl">0.3143</span>]</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>roc_auc   <span class="op">=</span> [<span class="fl">0.7912</span>, <span class="fl">0.8203</span>, <span class="fl">0.7834</span>]</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="bu">len</span>(models))</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="fl">0.2</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>ax.bar(x <span class="op">-</span> <span class="fl">1.5</span><span class="op">*</span>width, accuracy, width, label<span class="op">=</span><span class="st">'Accuracy'</span>,  color<span class="op">=</span><span class="st">'#2171b5'</span>, alpha<span class="op">=</span><span class="fl">0.85</span>)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>ax.bar(x <span class="op">-</span> <span class="fl">0.5</span><span class="op">*</span>width, recall,   width, label<span class="op">=</span><span class="st">'Recall'</span>,    color<span class="op">=</span><span class="st">'#238b45'</span>, alpha<span class="op">=</span><span class="fl">0.85</span>)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>ax.bar(x <span class="op">+</span> <span class="fl">0.5</span><span class="op">*</span>width, f1,       width, label<span class="op">=</span><span class="st">'F1-Score'</span>,  color<span class="op">=</span><span class="st">'#d94701'</span>, alpha<span class="op">=</span><span class="fl">0.85</span>)</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>ax.bar(x <span class="op">+</span> <span class="fl">1.5</span><span class="op">*</span>width, roc_auc,  width, label<span class="op">=</span><span class="st">'ROC-AUC'</span>,   color<span class="op">=</span><span class="st">'#756bb1'</span>, alpha<span class="op">=</span><span class="fl">0.85</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>ax.set_xticks(x)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>ax.set_xticklabels(models)</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="fl">1.1</span>)</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'Score'</span>)</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Model Performance Comparison'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>ax.legend()</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="ml_files/figure-html/cell-5-output-1.png" width="949" height="468" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <table class="caption-top table">
 <thead>
 <tr class="header">

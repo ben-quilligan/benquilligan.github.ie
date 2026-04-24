@@ -138,6 +138,40 @@ xgb.fit(X_train_sm, y_train_sm)
 
 ## Results
 
+```{python}
+#| echo: true
+#| eval: true
+#| code-fold: true
+#| code-summary: "Show results visualisation code"
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+models = ['Logistic\nRegression', 'Random\nForest', 'XGBoost']
+accuracy  = [0.7423, 0.9141, 0.8200]
+recall    = [0.7143, 0.2857, 0.5714]
+f1        = [0.2993, 0.3125, 0.3143]
+roc_auc   = [0.7912, 0.8203, 0.7834]
+
+x = np.arange(len(models))
+width = 0.2
+
+fig, ax = plt.subplots(figsize=(10, 5))
+ax.bar(x - 1.5*width, accuracy, width, label='Accuracy',  color='#2171b5', alpha=0.85)
+ax.bar(x - 0.5*width, recall,   width, label='Recall',    color='#238b45', alpha=0.85)
+ax.bar(x + 0.5*width, f1,       width, label='F1-Score',  color='#d94701', alpha=0.85)
+ax.bar(x + 1.5*width, roc_auc,  width, label='ROC-AUC',   color='#756bb1', alpha=0.85)
+
+ax.set_xticks(x)
+ax.set_xticklabels(models)
+ax.set_ylim(0, 1.1)
+ax.set_ylabel('Score')
+ax.set_title('Model Performance Comparison', fontsize=12)
+ax.legend()
+plt.tight_layout()
+plt.show()
+```
+
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
 |---|---|---|---|---|---|
 | Logistic Regression | 0.7423 | 0.1891 | 0.7143 | 0.2993 | 0.7912 |
