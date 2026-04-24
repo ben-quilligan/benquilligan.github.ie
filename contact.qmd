@@ -1,0 +1,51 @@
+---
+title: "Contact"
+---
+
+I am currently in my final year at Dublin City University and actively looking for a graduate role with a focus on data analytics. If you would like to get in touch, please use any of the channels below.
+
+## Get in Touch
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+
+### {{< fa envelope >}} Email
+[benquilligan1@gmail.com](mailto:benquilligan1@gmail.com)
+
+### {{< fa brands linkedin >}} LinkedIn
+[linkedin.com/in/benquilligan](https://www.linkedin.com/in/benquilligan/){target="_blank"}
+
+### {{< fa brands github >}} GitHub
+[github.com/ben-quilligan](https://github.com/ben-quilligan){target="_blank"}
+
+### {{< fa location-dot >}} Location
+Dublin, Ireland
+
+:::
+
+::: {.g-col-12 .g-col-md-6}
+
+::: {.callout-note}
+## {{< fa file-pdf >}} CV
+My full CV is available to download as a PDF.
+
+[{{< fa download >}} Download CV](cv/BenQuilligan_CV.pdf){target="_blank" .btn .btn-outline-primary}
+:::
+
+::: {.callout-tip}
+## {{< fa graduation-cap >}} Availability
+I am graduating in **Summer 2026** and available for graduate roles from that point. I am open to roles in data analytics, business intelligence, and digital transformation.
+:::
+
+:::
+
+:::
+
+## References
+
+References are available upon request. Please get in touch via email or LinkedIn and I will be happy to provide details.
+
+---
+
+*This site was built with [Quarto](https://quarto.org){target="_blank"} and published via [GitHub Pages](https://pages.github.com){target="_blank"}.*
