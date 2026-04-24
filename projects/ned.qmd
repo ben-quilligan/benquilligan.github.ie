@@ -41,7 +41,7 @@ Primary research (n=157 survey responses) confirmed that 77% of respondents woul
 
 ```{python}
 #| echo: true
-#| eval: false
+#| eval: true
 #| code-fold: true
 #| code-summary: "Show projection code"
 

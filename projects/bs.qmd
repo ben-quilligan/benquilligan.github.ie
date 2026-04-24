@@ -34,7 +34,7 @@ Lyten's acquisition presents several interconnected strategic challenges that wi
 
 ```{python}
 #| echo: true
-#| eval: false
+#| eval: true
 #| code-fold: true
 #| code-summary: "Show strategic framework visualisation"
 
