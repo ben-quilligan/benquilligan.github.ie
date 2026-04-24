@@ -3,7 +3,7 @@ title: "Project Management — Lyten Case Study"
 description: "A strategic analysis of Lyten's acquisition of Northvolt assets, examining post-acquisition integration, internationalisation strategy, and geopolitical alignment using core strategy frameworks."
 date: 2026-04-09
 categories: [Strategy, Business, Academic]
-image: ../images/strategy-cover.png
+image: images/strategy-cover.png
 ---
 
 ## Overview
