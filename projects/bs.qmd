@@ -1,5 +1,5 @@
 ---
-title: "Project Management — Lyten Case Study"
+title: "Business Strategy — Lyten Case Study"
 description: "A strategic analysis of Lyten's acquisition of Northvolt assets, examining post-acquisition integration, internationalisation strategy, and geopolitical alignment using core strategy frameworks."
 date: 2026-04-09
 categories: [Strategy, Business, Academic]
@@ -93,3 +93,12 @@ The key trade-off is between leveraging institutional support for short-term com
 ## Key Learnings
 
 This project deepened my ability to apply theoretical frameworks to real strategic situations. Analysing Lyten's position required balancing multiple competing perspectives, mirroring the complexity of real strategic decision-making, and reinforced the value of structured frameworks in cutting through ambiguous, multi-faceted problems.
+
+---
+
+::: {.callout-note icon=false}
+## {{< fa file-pdf >}} Full Case Study
+View or download the complete case study submitted for BAA1019 Business Strategy.
+
+[{{< fa download >}} Download Case Study](BAA1019CaseStudy.pdf){target="_blank" .btn .btn-primary}
+:::
