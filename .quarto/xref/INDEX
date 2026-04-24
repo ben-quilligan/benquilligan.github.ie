@@ -22,5 +22,8 @@
   },
   "projects/ned.qmd": {
     "ned.html": "bb5d25d6"
+  },
+  "projects/pm.qmd": {
+    "pm.html": "3b9338bd"
   }
 }

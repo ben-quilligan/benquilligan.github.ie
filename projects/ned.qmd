@@ -3,7 +3,7 @@ title: "New Enterprise Development — Mantis"
 description: "A full business plan for Mantis, an insect-protein ready-to-drink shake targeting the Irish health and wellness market. Developed as part of the BAA1003 New Enterprise Development module."
 date: 2026-04-01
 categories: [Entrepreneurship, Business Planning, Strategy]
-image: ../../images/mantis-cover.png
+image: ../images/mantis-cover.png
 ---
 
 ## Overview

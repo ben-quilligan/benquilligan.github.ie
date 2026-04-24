@@ -77,6 +77,62 @@
     "text": "Key Learnings\nThis project gave me practical experience across the full cycle of new venture development — from product ideation and consumer research through to financial modelling and investor pitch preparation. Taking the role of CEO taught me how to lead a multi-functional team, align competing priorities, and translate strategic goals into operational plans."
   },
   {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "A selection of academic projects completed as part of my Bachelor of Business Studies (Data Analytics) at Dublin City University.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Management — Lyten Case Study\n\n\n\nStrategy\n\nBusiness\n\nAcademic\n\n\n\nA strategic analysis of Lyten’s acquisition of Northvolt assets, examining post-acquisition integration, internationalisation strategy, and geopolitical alignment using core…\n\n\n\nApr 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew Enterprise Development — Mantis\n\n\n\nEntrepreneurship\n\nBusiness Planning\n\nStrategy\n\n\n\nA full business plan for Mantis, an insect-protein ready-to-drink shake targeting the Irish health and wellness market. Developed as part of the BAA1003 New Enterprise…\n\n\n\nApr 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning & Advanced Python\n\n\n\nPython\n\nMachine Learning\n\nData Analytics\n\n\n\nStroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset — including EDA, SMOTE oversampling, and ROC curve analysis.\n\n\n\nApr 25, 2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/pm.html",
+    "href": "projects/pm.html",
+    "title": "Project Management — Lyten Case Study",
+    "section": "",
+    "text": "This project is a case study analysis of Lyten, a US-based lithium-sulphur battery startup that acquired key assets from the bankrupt Swedish manufacturer Northvolt. The analysis was completed as part of the BAA1019 Business Strategy module at DCU.\nThe case study was structured around three questions examining strategic issues, internationalisation theory, and geopolitical alignment."
+  },
+  {
+    "objectID": "projects/pm.html#overview",
+    "href": "projects/pm.html#overview",
+    "title": "Project Management — Lyten Case Study",
+    "section": "",
+    "text": "This project is a case study analysis of Lyten, a US-based lithium-sulphur battery startup that acquired key assets from the bankrupt Swedish manufacturer Northvolt. The analysis was completed as part of the BAA1019 Business Strategy module at DCU.\nThe case study was structured around three questions examining strategic issues, internationalisation theory, and geopolitical alignment."
+  },
+  {
+    "objectID": "projects/pm.html#q1-strategic-issues-facing-lyten",
+    "href": "projects/pm.html#q1-strategic-issues-facing-lyten",
+    "title": "Project Management — Lyten Case Study",
+    "section": "Q1 — Strategic Issues Facing Lyten",
+    "text": "Q1 — Strategic Issues Facing Lyten\nLyten’s acquisition presents several interconnected strategic challenges that will shape its long-term trajectory.\n\n\n\n\n\n\nNote\n\n\n\nStrategic issues in context: Critical decisions and challenges that influence a firm’s long-term direction, competitive advantage, and ability to create value (Johnson et al., 2017).\n\n\nPost-acquisition integration is the most immediate challenge. Research suggests that many mergers fail due to cultural clashes, poor coordination, and difficulties in aligning processes (Zollo & Singh, 2004). The urgency of the Northvolt sale may have limited Lyten’s ability to conduct thorough due diligence.\nTechnology strategy presents a tension between Lyten’s core lithium-sulphur specialism and the lithium-ion production inherited from Northvolt. According to innovation strategy literature, firms must carefully balance exploration of new technologies with exploitation of existing capabilities (March, 1991).\nScope and market focus risks overextension across EVs, drones, and data centres simultaneously — a pattern that contributed to Northvolt’s own failure.\nInternational expansion at pace, while simultaneously integrating complex assets, runs counter to the Uppsala model of gradual internationalisation (Johanson & Vahlne, 2009).\nInstitutional dependency on government support in Sweden, Germany, and potentially Canada creates strategic constraints alongside its benefits."
+  },
+  {
+    "objectID": "projects/pm.html#q2-internationalisation-strategy-assessment",
+    "href": "projects/pm.html#q2-internationalisation-strategy-assessment",
+    "title": "Project Management — Lyten Case Study",
+    "section": "Q2 — Internationalisation Strategy Assessment",
+    "text": "Q2 — Internationalisation Strategy Assessment\n\n\nShow strategic framework visualisation\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Uppsala model: gradual vs rapid expansion comparison\nstages = ['Operational\\nStabilisation', 'Regional\\nConsolidation',\n          'Sequential\\nExpansion', 'Global\\nScale']\nrecommended = [1, 2, 3, 4]\nlyten_current = [0.3, 3.8, 4.0, 3.5]\n\nx = np.arange(len(stages))\nfig, ax = plt.subplots(figsize=(10, 5))\nax.plot(x, recommended, marker='o', label='Uppsala recommended path',\n        color='#2e7dcc', linewidth=2.5)\nax.plot(x, lyten_current, marker='s', label=\"Lyten's current approach\",\n        color='#d94701', linewidth=2.5, linestyle='--')\nax.set_xticks(x)\nax.set_xticklabels(stages)\nax.set_ylabel('Intensity of activity')\nax.set_title(\"Lyten's Internationalisation vs Uppsala Model\", fontsize=12)\nax.legend()\nax.set_ylim(0, 5)\nplt.tight_layout()\nplt.show()\n\n\nLyten’s expansion demonstrates features of strategic asset-seeking — acquiring Northvolt’s European facilities to access industrial infrastructure and skilled labour (Dunning, 1988). However, the pace of expansion is inconsistent with incremental internationalisation theory.\nResearch on premature scaling highlights that firms expanding too quickly without stable operational foundations face significant performance challenges (Reuber et al., 2021). Lyten is simultaneously integrating distressed assets, developing new battery technologies, and expanding into multiple geographic markets.\nRecommended approach: A regional hub model, prioritising European stabilisation before North American commitment, with staged geographic expansion aligned to operational readiness."
+  },
+  {
+    "objectID": "projects/pm.html#q3-geopolitical-alignment-barrier-or-constraint",
+    "href": "projects/pm.html#q3-geopolitical-alignment-barrier-or-constraint",
+    "title": "Project Management — Lyten Case Study",
+    "section": "Q3 — Geopolitical Alignment: Barrier or Constraint?",
+    "text": "Q3 — Geopolitical Alignment: Barrier or Constraint?\nLyten’s emphasis on local supply chains and government alignment can be evaluated through two lenses:\n\n\n\n\n\n\n\nPerspective\nAssessment\n\n\n\n\nBarrier to entry\nState-backed incentives and regulatory approvals favour embedded firms (Porter, 2008)\n\n\nInstitutional resource\nGovernment alignment provides legitimacy and access to funding (Peng et al., 2009)\n\n\nStrategic constraint\nOver-dependence reduces flexibility and exposes firm to policy risk\n\n\nLong-term vulnerability\nSubsidies can be withdrawn; political priorities shift\n\n\n\nThe key trade-off is between leveraging institutional support for short-term competitive advantage and maintaining the strategic independence required to respond to market changes. Lyten should diversify its sources of support and ensure commercial logic — not political alignment — drives investment decisions."
+  },
+  {
+    "objectID": "projects/pm.html#frameworks-applied",
+    "href": "projects/pm.html#frameworks-applied",
+    "title": "Project Management — Lyten Case Study",
+    "section": "Frameworks Applied",
+    "text": "Frameworks Applied\n\nUppsala Internationalisation Model (Johanson & Vahlne, 2009)\nResource-Based View (Barney, 1991)\nPorter’s Five Forces (Porter, 2008)\nInstitutional Theory (Peng et al., 2009)\nExploration/Exploitation Framework (March, 1991)"
+  },
+  {
+    "objectID": "projects/pm.html#key-learnings",
+    "href": "projects/pm.html#key-learnings",
+    "title": "Project Management — Lyten Case Study",
+    "section": "Key Learnings",
+    "text": "Key Learnings\nThis project deepened my ability to apply theoretical frameworks to real strategic situations. Analysing Lyten’s position required balancing multiple competing perspectives — which mirrors the complexity of real strategic decision-making — and reinforced the value of structured frameworks in cutting through ambiguous, multi-faceted problems."
+  },
+  {
     "objectID": "projects/ml.html",
     "href": "projects/ml.html",
     "title": "Machine Learning & Advanced Python",
@@ -117,62 +173,6 @@
     "title": "Machine Learning & Advanced Python",
     "section": "Key Learnings",
     "text": "Key Learnings\nWorking with this project reinforced the importance of understanding the business context behind model selection — in healthcare, recall often matters more than accuracy. It also highlighted the practical challenges of class imbalance and the value of techniques like SMOTE and class_weight='balanced' in producing fair models on skewed data."
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "A selection of academic projects completed as part of my Bachelor of Business Studies (Data Analytics) at Dublin City University.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBusiness Strategy — Lyten Case Study\n\n\n\nStrategy\n\nBusiness\n\nAcademic\n\n\n\nA strategic analysis of Lyten’s acquisition of Northvolt assets, examining post-acquisition integration, internationalisation strategy, and geopolitical alignment using core…\n\n\n\nApr 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew Enterprise Development — Mantis\n\n\n\nEntrepreneurship\n\nBusiness Planning\n\nStrategy\n\n\n\nA full business plan for Mantis, an insect-protein ready-to-drink shake targeting the Irish health and wellness market. Developed as part of the BAA1003 New Enterprise…\n\n\n\nApr 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning & Advanced Python\n\n\n\nPython\n\nMachine Learning\n\nData Analytics\n\n\n\nStroke prediction using logistic regression, random forest, and XGBoost on a real-world medical dataset — including EDA, SMOTE oversampling, and ROC curve analysis.\n\n\n\nApr 25, 2024\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/bs.html",
-    "href": "projects/bs.html",
-    "title": "Business Strategy — Lyten Case Study",
-    "section": "",
-    "text": "This project is a case study analysis of Lyten, a US-based lithium-sulphur battery startup that acquired key assets from the bankrupt Swedish manufacturer Northvolt. The analysis was completed as part of the BAA1019 Business Strategy module at DCU.\nThe case study was structured around three questions examining strategic issues, internationalisation theory, and geopolitical alignment."
-  },
-  {
-    "objectID": "projects/bs.html#overview",
-    "href": "projects/bs.html#overview",
-    "title": "Business Strategy — Lyten Case Study",
-    "section": "",
-    "text": "This project is a case study analysis of Lyten, a US-based lithium-sulphur battery startup that acquired key assets from the bankrupt Swedish manufacturer Northvolt. The analysis was completed as part of the BAA1019 Business Strategy module at DCU.\nThe case study was structured around three questions examining strategic issues, internationalisation theory, and geopolitical alignment."
-  },
-  {
-    "objectID": "projects/bs.html#q1-strategic-issues-facing-lyten",
-    "href": "projects/bs.html#q1-strategic-issues-facing-lyten",
-    "title": "Business Strategy — Lyten Case Study",
-    "section": "Q1 — Strategic Issues Facing Lyten",
-    "text": "Q1 — Strategic Issues Facing Lyten\nLyten’s acquisition presents several interconnected strategic challenges that will shape its long-term trajectory.\n\n\n\n\n\n\nNote\n\n\n\nStrategic issues in context: Critical decisions and challenges that influence a firm’s long-term direction, competitive advantage, and ability to create value (Johnson et al., 2017).\n\n\nPost-acquisition integration is the most immediate challenge. Research suggests that many mergers fail due to cultural clashes, poor coordination, and difficulties in aligning processes (Zollo & Singh, 2004). The urgency of the Northvolt sale may have limited Lyten’s ability to conduct thorough due diligence.\nTechnology strategy presents a tension between Lyten’s core lithium-sulphur specialism and the lithium-ion production inherited from Northvolt. According to innovation strategy literature, firms must carefully balance exploration of new technologies with exploitation of existing capabilities (March, 1991).\nScope and market focus risks overextension across EVs, drones, and data centres simultaneously — a pattern that contributed to Northvolt’s own failure.\nInternational expansion at pace, while simultaneously integrating complex assets, runs counter to the Uppsala model of gradual internationalisation (Johanson & Vahlne, 2009).\nInstitutional dependency on government support in Sweden, Germany, and potentially Canada creates strategic constraints alongside its benefits."
-  },
-  {
-    "objectID": "projects/bs.html#q2-internationalisation-strategy-assessment",
-    "href": "projects/bs.html#q2-internationalisation-strategy-assessment",
-    "title": "Business Strategy — Lyten Case Study",
-    "section": "Q2 — Internationalisation Strategy Assessment",
-    "text": "Q2 — Internationalisation Strategy Assessment\n\n\nShow strategic framework visualisation\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Uppsala model: gradual vs rapid expansion comparison\nstages = ['Operational\\nStabilisation', 'Regional\\nConsolidation',\n          'Sequential\\nExpansion', 'Global\\nScale']\nrecommended = [1, 2, 3, 4]\nlyten_current = [0.3, 3.8, 4.0, 3.5]\n\nx = np.arange(len(stages))\nfig, ax = plt.subplots(figsize=(10, 5))\nax.plot(x, recommended, marker='o', label='Uppsala recommended path',\n        color='#2e7dcc', linewidth=2.5)\nax.plot(x, lyten_current, marker='s', label=\"Lyten's current approach\",\n        color='#d94701', linewidth=2.5, linestyle='--')\nax.set_xticks(x)\nax.set_xticklabels(stages)\nax.set_ylabel('Intensity of activity')\nax.set_title(\"Lyten's Internationalisation vs Uppsala Model\", fontsize=12)\nax.legend()\nax.set_ylim(0, 5)\nplt.tight_layout()\nplt.show()\n\n\nLyten’s expansion demonstrates features of strategic asset-seeking — acquiring Northvolt’s European facilities to access industrial infrastructure and skilled labour (Dunning, 1988). However, the pace of expansion is inconsistent with incremental internationalisation theory.\nResearch on premature scaling highlights that firms expanding too quickly without stable operational foundations face significant performance challenges (Reuber et al., 2021). Lyten is simultaneously integrating distressed assets, developing new battery technologies, and expanding into multiple geographic markets.\nRecommended approach: A regional hub model, prioritising European stabilisation before North American commitment, with staged geographic expansion aligned to operational readiness."
-  },
-  {
-    "objectID": "projects/bs.html#q3-geopolitical-alignment-barrier-or-constraint",
-    "href": "projects/bs.html#q3-geopolitical-alignment-barrier-or-constraint",
-    "title": "Business Strategy — Lyten Case Study",
-    "section": "Q3 — Geopolitical Alignment: Barrier or Constraint?",
-    "text": "Q3 — Geopolitical Alignment: Barrier or Constraint?\nLyten’s emphasis on local supply chains and government alignment can be evaluated through two lenses:\n\n\n\n\n\n\n\nPerspective\nAssessment\n\n\n\n\nBarrier to entry\nState-backed incentives and regulatory approvals favour embedded firms (Porter, 2008)\n\n\nInstitutional resource\nGovernment alignment provides legitimacy and access to funding (Peng et al., 2009)\n\n\nStrategic constraint\nOver-dependence reduces flexibility and exposes firm to policy risk\n\n\nLong-term vulnerability\nSubsidies can be withdrawn; political priorities shift\n\n\n\nThe key trade-off is between leveraging institutional support for short-term competitive advantage and maintaining the strategic independence required to respond to market changes. Lyten should diversify its sources of support and ensure commercial logic — not political alignment — drives investment decisions."
-  },
-  {
-    "objectID": "projects/bs.html#frameworks-applied",
-    "href": "projects/bs.html#frameworks-applied",
-    "title": "Business Strategy — Lyten Case Study",
-    "section": "Frameworks Applied",
-    "text": "Frameworks Applied\n\nUppsala Internationalisation Model (Johanson & Vahlne, 2009)\nResource-Based View (Barney, 1991)\nPorter’s Five Forces (Porter, 2008)\nInstitutional Theory (Peng et al., 2009)\nExploration/Exploitation Framework (March, 1991)"
-  },
-  {
-    "objectID": "projects/bs.html#key-learnings",
-    "href": "projects/bs.html#key-learnings",
-    "title": "Business Strategy — Lyten Case Study",
-    "section": "Key Learnings",
-    "text": "Key Learnings\nThis project deepened my ability to apply theoretical frameworks to real strategic situations. Analysing Lyten’s position required balancing multiple competing perspectives — which mirrors the complexity of real strategic decision-making — and reinforced the value of structured frameworks in cutting through ambiguous, multi-faceted problems."
   },
   {
     "objectID": "index.html",
