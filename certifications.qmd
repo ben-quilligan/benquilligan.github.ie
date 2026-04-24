@@ -2,7 +2,7 @@
 title: "Certifications"
 ---
 
-I have completed over 30 courses across two platforms — Kubicle and DataCamp — covering data analytics, Python, Power BI, Excel, SQL, and more. All Kubicle certificates are CPD Approved by Chartered Accountants Ireland.
+I have completed over 30 courses across Kubicle and DataCamp, covering data analytics, Python, Power BI, Excel, SQL, and more. All Kubicle certificates are CPD Approved by Chartered Accountants Ireland.
 
 ## Summary
 
