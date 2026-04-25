@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Ben Quilligan"
-  favicon: logo.png
+  favicon: favicon.png
   navbar:
     title: false
     logo: logo.png
